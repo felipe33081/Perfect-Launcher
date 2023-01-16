@@ -11,7 +11,7 @@ namespace Perfect_Launcher
     {
         WarningMessages WM = new WarningMessages();
 
-        public bool AddUser(string User, string Passwd, string Classe)
+        public bool AddUser(string User, string Passwd, string Classe, string Nick = null)
         {
             // Checa se o user e a senha são válidos
             if (User == "" || Passwd == "")
@@ -37,6 +37,10 @@ namespace Perfect_Launcher
             // Adiciona a classe
             Settings.Default.Classe.Add(Classe);
 
+            // Checa se o Nick foi preenchido, se sim, adiciona o nick para o argumento
+            if (!string.IsNullOrEmpty(Nick))
+                Settings.Default.Nick.Add(Nick);
+
             return true;
         }
 
@@ -48,6 +52,7 @@ namespace Perfect_Launcher
                 Settings.Default.User.RemoveAt(UserId);
                 Settings.Default.Passwd.RemoveAt(UserId);
                 Settings.Default.Classe.RemoveAt(UserId);
+                Settings.Default.Nick.RemoveAt(UserId);
                 return true;
             }
             return false;

@@ -48,14 +48,17 @@ namespace Perfect_Launcher
             string prevuser = Settings.Default.User[listBox1.SelectedIndex - 1];
             string prevpass = Settings.Default.Passwd[listBox1.SelectedIndex - 1];
             string prevclass = Settings.Default.Classe[listBox1.SelectedIndex - 1];
+            string prevnick = Settings.Default.Nick[listBox1.SelectedIndex - 1];
 
             Settings.Default.User[listBox1.SelectedIndex - 1] = Settings.Default.User[listBox1.SelectedIndex];
             Settings.Default.Passwd[listBox1.SelectedIndex - 1] = Settings.Default.Passwd[listBox1.SelectedIndex];
             Settings.Default.Classe[listBox1.SelectedIndex - 1] = Settings.Default.Classe[listBox1.SelectedIndex];
+            Settings.Default.Nick[listBox1.SelectedIndex - 1] = Settings.Default.Nick[listBox1.SelectedIndex];
 
             Settings.Default.User[listBox1.SelectedIndex] = prevuser;
             Settings.Default.Passwd[listBox1.SelectedIndex] = prevpass;
             Settings.Default.Classe[listBox1.SelectedIndex] = prevclass;
+            Settings.Default.Nick[listBox1.SelectedIndex] = prevnick;
 
             newindex = listBox1.SelectedIndex - 1;
 
@@ -80,14 +83,17 @@ namespace Perfect_Launcher
             string nextuser = Settings.Default.User[listBox1.SelectedIndex + 1];
             string nextpass = Settings.Default.Passwd[listBox1.SelectedIndex + 1];
             string nextclass = Settings.Default.Classe[listBox1.SelectedIndex + 1];
+            string nextnick = Settings.Default.Nick[listBox1.SelectedIndex + 1];
 
             Settings.Default.User[listBox1.SelectedIndex + 1] = Settings.Default.User[listBox1.SelectedIndex];
             Settings.Default.Passwd[listBox1.SelectedIndex + 1] = Settings.Default.Passwd[listBox1.SelectedIndex];
             Settings.Default.Classe[listBox1.SelectedIndex + 1] = Settings.Default.Classe[listBox1.SelectedIndex];
+            Settings.Default.Nick[listBox1.SelectedIndex + 1] = Settings.Default.Nick[listBox1.SelectedIndex];
 
             Settings.Default.User[listBox1.SelectedIndex] = nextuser;
             Settings.Default.Passwd[listBox1.SelectedIndex] = nextpass;
             Settings.Default.Classe[listBox1.SelectedIndex] = nextclass;
+            Settings.Default.Nick[listBox1.SelectedIndex] = nextnick;
 
             newindex = listBox1.SelectedIndex + 1;
 

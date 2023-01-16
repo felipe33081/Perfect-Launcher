@@ -199,18 +199,20 @@ namespace Perfect_Launcher
         public void OpenGame(int UserId, bool bOnlyAdd = false, int ProcessId = -1)
         {
             // Login e senha
-            string User = Settings.Default.User[UserId];
+            string user = Settings.Default.User[UserId];
             // TODO: Desfazer o hash da senha ao abrir
-            string Passwd = Settings.Default.Passwd[UserId];
+            string passwd = Settings.Default.Passwd[UserId];
+            //Nick do personagem a ser logado
+            string nick = Settings.Default.Nick[UserId];
 
             // Verifica se a conta já está aberta (só se o OnlyAdd for false)
             for (int i = 0; i < RGames.Count && !bOnlyAdd; i++)
             {
                 try
                 {
-                    if (RGames[i].User == User)
+                    if (RGames[i].User == user)
                     {
-                        DialogResult dr = WM.ShowMessage("A conta '" + User + "' já está aberta.\nDeseja abri-la mesmo assim?", 1, true);
+                        DialogResult dr = WM.ShowMessage("A conta '" + user + "' já está aberta.\nDeseja abri-la mesmo assim?", 1, true);
                         if (dr != DialogResult.Yes)
                         {
                             return;
@@ -278,7 +280,7 @@ namespace Perfect_Launcher
                             gateway = "5222-5223:189.127.165.108";
                             break;
                     }
-                    string UserBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(User));
+                    string UserBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(user));
                     string ServerBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(gateway + ","
                         + Settings.Default.ForceServer + ",0"));
 
@@ -328,7 +330,7 @@ namespace Perfect_Launcher
 
             // Argumentos que serão usados
             //@ToDo: Adicionar novo parametro de entrada para o nick do personagem
-            string args = " startbypatcher " + " user:" + User + " pwd:" + Passwd + " role:~Thanos~";
+            string args = " startbypatcher " + " user:" + user + " pwd:" + passwd + " role:" + nick;
 
             // Cria uma classe temporária para ser armazenada na lista
             RunningGames rg = new RunningGames();
@@ -339,7 +341,7 @@ namespace Perfect_Launcher
             else
                 rg.ProcessId = ProcessId;
 
-            rg.User = User;
+            rg.User = user;
 
             // Adiciona a classe para a lista (o crashwatch ficará responsável por remove-lá depois)
             RGames.Add(rg);
@@ -349,11 +351,11 @@ namespace Perfect_Launcher
 
             // Verifica se a conta aberta já está presente na lista de recentes
             // (caso esteja, remove-a)
-            if (OpenRecently.Contains(User))
-                OpenRecently.Remove(User);
+            if (OpenRecently.Contains(user))
+                OpenRecently.Remove(user);
 
             // Seta como uma conta aberta recentemente
-            OpenRecently.Add(User);
+            OpenRecently.Add(user);
 
             // Caso tenha mais de 5 contas recentes, remove a primeira
             if (OpenRecently.Count > 5)
@@ -374,7 +376,7 @@ namespace Perfect_Launcher
             UpdateArchChecks();
 
             // Salva a conta aberta no log
-            WriteToLog(User);
+            WriteToLog(user);
         }
 
         private void WriteToLog(string User)
@@ -1248,8 +1250,11 @@ namespace Perfect_Launcher
 
                     var start3 = s.IndexOf("¢") + 1;
                     var Classe = s.Substring(start3, s.IndexOf("¬") - start3);
+                    
+                    var start4 = s.IndexOf("4") + 1;
+                    var Nick = s.Substring(start4, s.IndexOf("5") - start4);
 
-                    m.AddUser(User, Passwd, Classe);
+                    m.AddUser(User, Passwd, Classe, Nick);
 
                     Contador++;
                 }
@@ -1276,7 +1281,7 @@ namespace Perfect_Launcher
 
             string Tudo = "";
             for (int i = 0; i < Settings.Default.User.Count; i++)
-                Tudo += "¹" + Settings.Default.User[i] + "²³" + Settings.Default.Passwd[i] + "£¢" + Settings.Default.Classe[i] + "¬\n";
+                Tudo += "¹" + Settings.Default.User[i] + "²³" + Settings.Default.Passwd[i] + "£¢" + Settings.Default.Classe[i] + "¬4" + Settings.Default.Nick[i] + "5\n";
 
             // Salva tudo
             SaveFileDialog sd = new SaveFileDialog();
