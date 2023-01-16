@@ -49,7 +49,7 @@ namespace Perfect_Launcher
         // Bloqueia a troca de arquitetura caso algum jogo esteja aberto
         public bool bBlockArchChange = false;
 
-        const string Exe32 = "ELEMENTCLIENT.EXE";
+        const string Exe32 = "elementclient_32.exe";
         const string Exe64 = "elementclient_64.exe";
 
         [DllImport("user32.dll")]
@@ -259,19 +259,27 @@ namespace Perfect_Launcher
                     }
 
                     // Converte o usuário e o servidor para bas64
-                    int GatewayN;
+                    string gateway;
                     switch (Settings.Default.ForceServer)
                     {
-                        //Ophiuchus (PvE)
-                        //Phoenix (PvP)
-                        //Taurus (PvP)
-                        case "Ophiuchus (PvE)": GatewayN = 2; break;
-                        case "Phoenix (PvP)": GatewayN = 3; break;
+                        //History  1 (PvP)
+                        //History  2 (PvP)
+                        //History  3 (PvP)
+                        case "History  1 (PvP)":
+                            gateway = "5222-5223:189.127.165.108";
+                            break;
+                        case "History  2 (PvP)":
+                            gateway = "29000-29001:189.127.165.109";
+                            break;
+                        case "History  3 (PvP)":
+                            gateway = "5222-5223:189.127.165.110";
+                            break;
                         default:
-                            GatewayN = 7; break;
+                            gateway = "5222-5223:189.127.165.108";
+                            break;
                     }
                     string UserBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(User));
-                    string ServerBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes("29000:gateway" + GatewayN.ToString() + ".perfectworld.com.br,"
+                    string ServerBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(gateway + ","
                         + Settings.Default.ForceServer + ",0"));
 
                     string StringFinal = UserBase64 + " " + ServerBase64;
@@ -319,7 +327,8 @@ namespace Perfect_Launcher
             }
 
             // Argumentos que serão usados
-            string args = " startbypatcher " + Settings.Default.ExtraArgs + " user:" + User + " pwd:" + Passwd;
+            //@ToDo: Adicionar novo parametro de entrada para o nick do personagem
+            string args = " startbypatcher " + " user:" + User + " pwd:" + Passwd + " role:~Thanos~";
 
             // Cria uma classe temporária para ser armazenada na lista
             RunningGames rg = new RunningGames();
