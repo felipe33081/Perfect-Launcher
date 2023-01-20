@@ -644,6 +644,7 @@ namespace Perfect_Launcher
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //BOTAO "COMBAR"
             if (bChangeBlocked || ProcessQueue.Count <= 0)
             {
                 Stop();
@@ -655,7 +656,15 @@ namespace Perfect_Launcher
 
         private void button6_Click(object sender, EventArgs e)
         {
+            //BOTAO "PARAR"
             Stop();
+            return;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //BOTAO "SÓ O F4"
+            Start(true);
         }
 
         private void Start(bool OnlyF4)
@@ -716,14 +725,19 @@ namespace Perfect_Launcher
                 {
                     listBox2.SelectedIndex = 0;
                 }
-                    
             }
         }
 
         private async void ComboLoop(bool OnlyF4)
         {
             // Se o forcestop for true ou o count >= 8 (chegou ja última tecla pressionada)
-            if (bForceStop || ProcessQueue.Count <= 0 || OnlyF4 ? (Count > 4) : (Count > 8))
+            if (bForceStop)
+            {
+                Stop(); 
+                return;
+            }
+
+            if (ProcessQueue.Count <= 0 || OnlyF4 ? (Count > 4) : (Count > 8))
             {
                 Stop();
                 return;
@@ -733,14 +747,30 @@ namespace Perfect_Launcher
 
             switch (Count)
             {
-                case 1: KEY = VK_F1; label5.Text = "Pressionando F1"; break;
-                case 2: KEY = VK_F2; label5.Text = "Pressionando F2"; break;
-                case 3: KEY = VK_F3; label5.Text = "Pressionando F3"; break;
-                case 4: KEY = VK_F4; label5.Text = "Pressionando F4"; break;
-                case 5: KEY = VK_F5; label5.Text = "Pressionando F5"; break;
-                case 6: KEY = VK_F6; label5.Text = "Pressionando F6"; break;
-                case 7: KEY = VK_F7; label5.Text = "Pressionando F7"; break;
-                default: KEY = VK_F8; label5.Text = "Pressionando F8"; break;
+                case 1: KEY = VK_F1;
+                    label5.Text = "Pressionando F1";
+                    break;
+                case 2: KEY = VK_F2;
+                    label5.Text = "Pressionando F2";
+                    break;
+                case 3: KEY = VK_F3;
+                    label5.Text = "Pressionando F3";
+                    break;
+                case 4: KEY = VK_F4;
+                    label5.Text = "Pressionando F4";
+                    break;
+                case 5: KEY = VK_F5;
+                    label5.Text = "Pressionando F5";
+                    break;
+                case 6: KEY = VK_F6;
+                    label5.Text = "Pressionando F6";
+                    break;
+                case 7: KEY = VK_F7;
+                    label5.Text = "Pressionando F7";
+                    break;
+                default: KEY = VK_F8;
+                    label5.Text = "Pressionando F8";
+                    break;
             }
 
             // Se o onlyf4 for true, força a key pra ser o F4
@@ -750,8 +780,8 @@ namespace Perfect_Launcher
             // Pra cada conta na lista, joga a janela pra frente e pressiona a tecla
             try
             {
-                for (int i = 0; i < ProcessQueue.Count; i++)
-                {
+                int count = 0;
+                do {
                     // Se o forcestop for true ou o count >= 8 (chegou ja última tecla pressionada)
                     if (bForceStop || ProcessQueue.Count <= 0 || OnlyF4 ? (Count > 4) : (Count > 8))
                     {
@@ -760,24 +790,30 @@ namespace Perfect_Launcher
                     }
 
                     // Mostra na lista a conta que está sendo exibida
-                    listBox2.SelectedIndex = i;
+                    listBox2.SelectedIndex = count;
 
                     // Traz a janela pra frente e manda a tecla
-                    BringToTop(ProcessQueue[i]);
+                    BringToTop(ProcessQueue[count]);
                     await Task.Delay(5);
-                    SendKeyPress(ProcessQueue[i], KEY);
+                    SendKeyPress(ProcessQueue[count], KEY);
 
                     // Dorme x segundos
                     // Valor do numericupdown / pela quantidade de contas abertas
                     await Task.Delay((Count <= 4 ? Convert.ToInt32(numericUpDown1.Value) : Convert.ToInt32(numericUpDown2.Value)) / ProcessQueue.Count);
-                }
-
+                    count++;
+                } while (count < ProcessQueue.Count);
+                
                 // Caso o onlyf4 seja true, checa se é em loop
                 if (OnlyF4)
                 {
                     // Se NÃO for um loop, já seta o valor necessário pra parar na próxima iteração
-                    if (!checkBox1.Checked)
+                    if (!checkBox1.Checked && Count >= 1)
+                    {
                         Stop();
+                        return;
+                    }
+                    if (!checkBox1.Checked)
+                        Count++;
                 }
                 else
                 {
@@ -912,17 +948,6 @@ namespace Perfect_Launcher
         {
             UpdateListBox1();
             UpdateListBox2();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            if (bForceStop || ProcessQueue.Count <= 0)
-            {
-                Stop();
-                return;
-            }
-
-            Start(true);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

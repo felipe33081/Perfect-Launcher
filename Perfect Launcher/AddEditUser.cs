@@ -105,10 +105,5 @@ namespace Perfect_Launcher
         {
             textBox2.UseSystemPasswordChar = !textBox2.UseSystemPasswordChar;
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
