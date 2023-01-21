@@ -32,11 +32,12 @@ namespace Perfect_Launcher
                 checkBox7.Checked = Settings.Default.DailyCheckups[7];
                 checkBox8.Checked = Settings.Default.DailyCheckups[8];
                 checkBox9.Checked = Settings.Default.DailyCheckups[9];
+                checkBox10.Checked = Settings.Default.DailyCheckups[10];
             }
 
             // Sempre carrega o checkbox da torre, pois ele será resetado toda quarta-feira pelo programa
             // Ao perguntar pro usuário se ele deseja checar por atualizações
-            checkBox10.Checked = Settings.Default.DailyCheckups[10];
+            //checkBox10.Checked = Settings.Default.DailyCheckups[10];
         }
 
         private void CheckForm_FormClosing(object sender, FormClosingEventArgs e)

@@ -50,7 +50,7 @@ namespace Perfect_Launcher
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(126, 20);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Diárias de Morai";
+            this.checkBox1.Text = "Morai";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox0
@@ -70,7 +70,7 @@ namespace Perfect_Launcher
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(187, 20);
             this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Diárias do Mundo Primitivo";
+            this.checkBox2.Text = "Mundo Primitivo";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -80,7 +80,7 @@ namespace Perfect_Launcher
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(180, 20);
             this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Diárias de Quedra-Nunca";
+            this.checkBox3.Text = "BH";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox5
@@ -90,7 +90,7 @@ namespace Perfect_Launcher
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(46, 20);
             this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "BH";
+            this.checkBox5.Text = "Diária 100(Gorila e Três Campeões)";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox6
@@ -100,7 +100,7 @@ namespace Perfect_Launcher
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(170, 20);
             this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Palácio do Rio da Prata";
+            this.checkBox6.Text = "Diária 100(Inferno)";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox7
@@ -110,7 +110,7 @@ namespace Perfect_Launcher
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(165, 20);
             this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Paraíso Despedaçado";
+            this.checkBox7.Text = "Palácio do Rio da Prata";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox8
@@ -120,7 +120,7 @@ namespace Perfect_Launcher
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(156, 20);
             this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "Salões da Luz-Auróra";
+            this.checkBox8.Text = "Vale da Fênix";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
@@ -130,7 +130,7 @@ namespace Perfect_Launcher
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(137, 20);
             this.checkBox9.TabIndex = 8;
-            this.checkBox9.Text = "Submundo Frígido";
+            this.checkBox9.Text = "Brado de Batalha";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -140,7 +140,7 @@ namespace Perfect_Launcher
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(124, 20);
             this.checkBox4.TabIndex = 9;
-            this.checkBox4.Text = "Diárias da Casa";
+            this.checkBox4.Text = "Base Clã";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox10
@@ -150,7 +150,7 @@ namespace Perfect_Launcher
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(126, 20);
             this.checkBox10.TabIndex = 10;
-            this.checkBox10.Text = "Torre do Martírio";
+            this.checkBox10.Text = "Nirvana";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // CheckForm

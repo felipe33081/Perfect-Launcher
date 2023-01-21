@@ -1118,10 +1118,10 @@ namespace Perfect_Launcher
             g.ShowDialog();
         }
 
-        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://twitter.com/LibardiFelipe");
-        }
+        //private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    Process.Start("linkdoTwitterOuAlgoDoTipo");
+        //}
 
         private void customizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -1206,12 +1206,6 @@ namespace Perfect_Launcher
             {
                 WM.ShowMessage("O launcher não pôde ser encontrado!\nFavor procurar por atualizações manualmente.", 3);
             }
-        }
-
-        private void picPayToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PicPay pp = new PicPay();
-            pp.ShowDialog(); // pp.show kkkkk
         }
 
         private void notasDeAtualizaçãoToolStripMenuItem_Click(object sender, EventArgs e)

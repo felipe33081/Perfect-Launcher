@@ -63,7 +63,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.twitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.picPayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notasDeAtualizaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.versão1000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -398,30 +397,20 @@
             // 
             this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.twitterToolStripMenuItem,
-            this.picPayToolStripMenuItem,
             this.notasDeAtualizaçãoToolStripMenuItem,
             this.toolStripSeparator3,
             this.versão1000ToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
-            this.toolStripMenuItem1.Text = "Libardi";
+            this.toolStripMenuItem1.Text = "Felipe";
             // 
             // twitterToolStripMenuItem
             // 
             this.twitterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("twitterToolStripMenuItem.Image")));
             this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
             this.twitterToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.twitterToolStripMenuItem.Text = "Contato (Twitter)";
-            this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
-            // 
-            // picPayToolStripMenuItem
-            // 
-            this.picPayToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("picPayToolStripMenuItem.Image")));
-            this.picPayToolStripMenuItem.Name = "picPayToolStripMenuItem";
-            this.picPayToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.picPayToolStripMenuItem.Text = "Doações (PicPay)";
-            this.picPayToolStripMenuItem.Click += new System.EventHandler(this.picPayToolStripMenuItem_Click);
+            this.twitterToolStripMenuItem.Text = "Contato";
+            //this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
             // 
             // notasDeAtualizaçãoToolStripMenuItem
             // 
@@ -440,14 +429,14 @@
             this.versão1000ToolStripMenuItem.Enabled = false;
             this.versão1000ToolStripMenuItem.Name = "versão1000ToolStripMenuItem";
             this.versão1000ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.versão1000ToolStripMenuItem.Text = "Versão 1.0.0.3";
+            this.versão1000ToolStripMenuItem.Text = "Versão 2.0.0.3";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(82, 20);
-            this.toolStripMenuItem2.Text = "Chat Global";
+            this.toolStripMenuItem2.Text = "Mensagens";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
@@ -766,7 +755,6 @@
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem atualizarOPWToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem picPayToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notasDeAtualizaçãoToolStripMenuItem;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ToolStripMenuItem avançadasToolStripMenuItem;
