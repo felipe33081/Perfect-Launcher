@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Perfect Launcher")]
 [assembly: AssemblyDescription("Gerenciador de contas para Perfect World")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Libardi")]
+[assembly: AssemblyCompany("Felipe Pereira")]
 [assembly: AssemblyProduct("Perfect Launcher")]
-[assembly: AssemblyCopyright("Copyright © Felipe Libardi 2021")]
+[assembly: AssemblyCopyright("Copyright © Felipe Pereira 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class Global
@@ -30,16 +31,16 @@ namespace Perfect_Launcher
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Global));
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new Label();
+            this.listBox1 = new ListBox();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Dock = DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Margin = new Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(779, 81);
             this.label1.TabIndex = 2;
@@ -48,7 +49,7 @@ namespace Perfect_Launcher
             // 
             // listBox1
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.Dock = DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(0, 81);
@@ -60,16 +61,16 @@ namespace Perfect_Launcher
             // Global
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(779, 444);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new Padding(4);
             this.Name = "Global";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Chat Global";
             this.Load += new System.EventHandler(this.Global_Load);
             this.ResumeLayout(false);
@@ -77,7 +78,7 @@ namespace Perfect_Launcher
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private Label label1;
+        private ListBox listBox1;
     }
 }

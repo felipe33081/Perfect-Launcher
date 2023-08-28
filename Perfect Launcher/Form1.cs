@@ -43,14 +43,11 @@ namespace Perfect_Launcher
 
         int ScrollTextDefaultValue = 0;
 
-        // Será usado para impetir que as contas abram caso o client esteja desatualizado
-        bool bHasUpdate = false;
-
         // Bloqueia a troca de arquitetura caso algum jogo esteja aberto
         public bool bBlockArchChange = false;
 
         const string Exe32 = "elementclient_32.exe";
-        const string Exe64 = "elementclient_64.exe";
+        const string Exe64 = "ELEMENTCLIENT.exe";
 
         [DllImport("user32.dll")]
         internal static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
@@ -95,6 +92,7 @@ namespace Perfect_Launcher
                 Settings.Default.User.Clear();
                 Settings.Default.Passwd.Clear();
                 Settings.Default.Classe.Clear();
+                Settings.Default.Nick.Clear();
                 Settings.Default.ComboQueue.Clear();
                 Settings.Default.UsersBeforeClosing.Clear();
 
@@ -264,20 +262,20 @@ namespace Perfect_Launcher
                     string gateway;
                     switch (Settings.Default.ForceServer)
                     {
-                        //History  1 (PvP)
-                        //History  2 (PvP)
-                        //History  3 (PvP)
-                        case "History  1 (PvP)":
-                            gateway = "5222-5223:189.127.165.108";
+                        //The Classic PW / Server 1
+                        //The Classic PW / Server 2
+                        //The Classic PW / Server 3
+                        case "The Classic PW / Server 1":
+                            gateway = "29001:tcpwserverrs.theclassic.games";
                             break;
-                        case "History  2 (PvP)":
-                            gateway = "29000-29001:189.127.165.109";
+                        case "The Classic PW / Server 2":
+                            gateway = "39101:tcpwserverrs.theclassic.games";
                             break;
-                        case "History  3 (PvP)":
-                            gateway = "5222-5223:189.127.165.110";
+                        case "The Classic PW / Server 3":
+                            gateway = "39201:tcpwserverrs.theclassic.games";
                             break;
                         default:
-                            gateway = "5222-5223:189.127.165.108";
+                            gateway = "29001:tcpwserverrs.theclassic.games";
                             break;
                     }
                     string UserBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(user));
@@ -528,33 +526,6 @@ namespace Perfect_Launcher
             }
         }
 
-        private async void CheckForClientUpdates()
-        {
-            Task<bool> update = HasUpdate();
-            bHasUpdate = await update;
-
-            if (bHasUpdate)
-            {
-                DialogResult dr = WM.ShowMessage("A versão do seu client é antiga e precisa ser atualizada.\nDeseja atualizar agora?", 1, true);
-                if (dr == DialogResult.Yes)
-                {
-                    // Só para de perguntar se ele clicar em Yes.
-                    Settings.Default.bCheckedForUpdates = true;
-
-                    // Checa se o launcher existe
-                    string LauncherPath = Application.StartupPath.Replace("\\element", "\\launcher\\Launcher.exe");
-                    if (File.Exists(LauncherPath))
-                    {
-                        Process.Start(LauncherPath);
-                    }
-                    else
-                    {
-                        WM.ShowMessage("O launcher não pôde ser encontrado!\nFavor procurar por atualizações manualmente.", 3);
-                    }
-                }
-            }
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // Cria a pasta em que os arquivos do programa serão armazenados
@@ -573,7 +544,7 @@ namespace Perfect_Launcher
             DownloadMessages();
             RefreshUsernamesOnComboBox();
 
-            CheckForClientUpdates();
+            //CheckForClientUpdates();
 
             // Reseta a checkbox da torre do martírio caso seja quarta-feira
             if (DateTime.Today.ToString("D").Contains("quarta-feira"))
@@ -614,16 +585,6 @@ namespace Perfect_Launcher
         {
             if (usersComboBox.SelectedItem == null)
                 return;
-
-            // Checa por updates
-            if (bHasUpdate)
-            {
-                CheckForClientUpdates();
-
-                // Se continuar tendo update, não abre conta nenhuma
-                if (bHasUpdate)
-                    return;
-            }
 
             try
             {
@@ -1118,11 +1079,6 @@ namespace Perfect_Launcher
             g.ShowDialog();
         }
 
-        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://twitter.com/LibardiFelipe");
-        }
-
         private void customizarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Customizar c = new Customizar(this);
@@ -1206,12 +1162,6 @@ namespace Perfect_Launcher
             {
                 WM.ShowMessage("O launcher não pôde ser encontrado!\nFavor procurar por atualizações manualmente.", 3);
             }
-        }
-
-        private void picPayToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PicPay pp = new PicPay();
-            pp.ShowDialog(); // pp.show kkkkk
         }
 
         private void notasDeAtualizaçãoToolStripMenuItem_Click(object sender, EventArgs e)

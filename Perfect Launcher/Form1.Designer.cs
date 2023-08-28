@@ -1,4 +1,6 @@
-﻿namespace Perfect_Launcher
+﻿using System.Windows.Forms;
+
+namespace Perfect_Launcher
 {
     partial class Form1
     {
@@ -30,70 +32,68 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.usersComboBox = new System.Windows.Forms.ComboBox();
-            this.openButton = new System.Windows.Forms.Button();
-            this.CrashWatcherTimer = new System.Windows.Forms.Timer(this.components);
-            this.AddUserButton = new System.Windows.Forms.Button();
-            this.RemoveUserButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.cONTA1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTA3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTA4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONTA5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.atalhosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkinDiárioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.combarComAPTToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fecharContasEXCETOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tempTopMost = new System.Windows.Forms.Timer(this.components);
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelGlobal = new System.Windows.Forms.Label();
-            this.border1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.twitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.picPayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notasDeAtualizaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.versão1000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.gerenciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.atualizarOPWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculadoraDeFamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkinDiárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.combarComAPTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fecharContasEXCETOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arquiteturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usar32BitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usar64BitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.configurarAtalhosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forçarServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.avançadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.executáveisEArgumentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetarOProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.usersComboBox = new ComboBox();
+            this.openButton = new Button();
+            this.CrashWatcherTimer = new Timer(this.components);
+            this.AddUserButton = new Button();
+            this.RemoveUserButton = new Button();
+            this.button1 = new Button();
+            this.button2 = new Button();
+            this.notifyIcon1 = new NotifyIcon(this.components);
+            this.contextMenuStrip1 = new ContextMenuStrip(this.components);
+            this.toolStripComboBox2 = new ToolStripComboBox();
+            this.toolStripSeparator4 = new ToolStripSeparator();
+            this.cONTA1ToolStripMenuItem = new ToolStripMenuItem();
+            this.cONTA2ToolStripMenuItem = new ToolStripMenuItem();
+            this.cONTA3ToolStripMenuItem = new ToolStripMenuItem();
+            this.cONTA4ToolStripMenuItem = new ToolStripMenuItem();
+            this.cONTA5ToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripSeparator1 = new ToolStripSeparator();
+            this.atalhosToolStripMenuItem = new ToolStripMenuItem();
+            this.checkinDiárioToolStripMenuItem1 = new ToolStripMenuItem();
+            this.combarComAPTToolStripMenuItem1 = new ToolStripMenuItem();
+            this.fecharContasEXCETOToolStripMenuItem1 = new ToolStripMenuItem();
+            this.sairToolStripMenuItem = new ToolStripMenuItem();
+            this.tempTopMost = new Timer(this.components);
+            this.button3 = new Button();
+            this.button4 = new Button();
+            this.panel1 = new Panel();
+            this.labelGlobal = new Label();
+            this.border1 = new Label();
+            this.button5 = new Button();
+            this.button6 = new Button();
+            this.menuStrip1 = new MenuStrip();
+            this.toolStripMenuItem1 = new ToolStripMenuItem();
+            this.notasDeAtualizaçãoToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripSeparator3 = new ToolStripSeparator();
+            this.versão1000ToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripMenuItem2 = new ToolStripMenuItem();
+            this.toolStripMenuItem3 = new ToolStripMenuItem();
+            this.importarToolStripMenuItem = new ToolStripMenuItem();
+            this.exportarToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripSeparator2 = new ToolStripSeparator();
+            this.gerenciarToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripMenuItem4 = new ToolStripMenuItem();
+            this.atualizarOPWToolStripMenuItem = new ToolStripMenuItem();
+            this.calculadoraDeFamaToolStripMenuItem = new ToolStripMenuItem();
+            this.checkinDiárioToolStripMenuItem = new ToolStripMenuItem();
+            this.combarComAPTToolStripMenuItem = new ToolStripMenuItem();
+            this.fecharContasEXCETOToolStripMenuItem = new ToolStripMenuItem();
+            this.logsToolStripMenuItem = new ToolStripMenuItem();
+            this.customizarToolStripMenuItem = new ToolStripMenuItem();
+            this.arquiteturaToolStripMenuItem = new ToolStripMenuItem();
+            this.usar32BitsToolStripMenuItem = new ToolStripMenuItem();
+            this.usar64BitsToolStripMenuItem = new ToolStripMenuItem();
+            this.customizarToolStripMenuItem1 = new ToolStripMenuItem();
+            this.configurarAtalhosToolStripMenuItem = new ToolStripMenuItem();
+            this.forçarServidorToolStripMenuItem = new ToolStripMenuItem();
+            this.toolStripComboBox1 = new ToolStripComboBox();
+            this.toolStripSeparator5 = new ToolStripSeparator();
+            this.avançadasToolStripMenuItem = new ToolStripMenuItem();
+            this.executáveisEArgumentosToolStripMenuItem = new ToolStripMenuItem();
+            this.resetarOProgramaToolStripMenuItem = new ToolStripMenuItem();
+            this.label1 = new Label();
+            this.button7 = new Button();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -101,11 +101,11 @@
             // 
             // usersComboBox
             // 
-            this.usersComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.usersComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             this.usersComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersComboBox.FormattingEnabled = true;
             this.usersComboBox.Location = new System.Drawing.Point(201, 301);
-            this.usersComboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.usersComboBox.Margin = new Padding(4);
             this.usersComboBox.Name = "usersComboBox";
             this.usersComboBox.Size = new System.Drawing.Size(200, 28);
             this.usersComboBox.TabIndex = 0;
@@ -113,7 +113,7 @@
             // openButton
             // 
             this.openButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.openButton.FlatStyle = FlatStyle.Flat;
             this.openButton.ForeColor = System.Drawing.Color.White;
             this.openButton.Location = new System.Drawing.Point(201, 334);
             this.openButton.Name = "openButton";
@@ -131,7 +131,7 @@
             // AddUserButton
             // 
             this.AddUserButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.AddUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddUserButton.FlatStyle = FlatStyle.Flat;
             this.AddUserButton.ForeColor = System.Drawing.Color.White;
             this.AddUserButton.Location = new System.Drawing.Point(406, 301);
             this.AddUserButton.Name = "AddUserButton";
@@ -144,7 +144,7 @@
             // RemoveUserButton
             // 
             this.RemoveUserButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RemoveUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemoveUserButton.FlatStyle = FlatStyle.Flat;
             this.RemoveUserButton.ForeColor = System.Drawing.Color.White;
             this.RemoveUserButton.Location = new System.Drawing.Point(436, 301);
             this.RemoveUserButton.Name = "RemoveUserButton";
@@ -184,11 +184,11 @@
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Perfect Launcher";
-            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
+            this.notifyIcon1.MouseClick += new MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contextMenuStrip1.Items.AddRange(new ToolStripItem[] {
             this.toolStripComboBox2,
             this.toolStripSeparator4,
             this.cONTA1ToolStripMenuItem,
@@ -204,7 +204,7 @@
             // 
             // toolStripComboBox2
             // 
-            this.toolStripComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             this.toolStripComboBox2.Name = "toolStripComboBox2";
             this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox2.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox2_SelectedIndexChanged);
@@ -261,7 +261,7 @@
             // 
             // atalhosToolStripMenuItem
             // 
-            this.atalhosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atalhosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
             this.checkinDiárioToolStripMenuItem1,
             this.combarComAPTToolStripMenuItem1,
             this.fecharContasEXCETOToolStripMenuItem1});
@@ -327,7 +327,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.labelGlobal);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Dock = DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 386);
@@ -338,7 +338,7 @@
             // labelGlobal
             // 
             this.labelGlobal.BackColor = System.Drawing.Color.Transparent;
-            this.labelGlobal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelGlobal.Cursor = Cursors.Hand;
             this.labelGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGlobal.Location = new System.Drawing.Point(0, 0);
             this.labelGlobal.Name = "labelGlobal";
@@ -382,7 +382,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip1.Items.AddRange(new ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3,
@@ -396,33 +396,15 @@
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.twitterToolStripMenuItem,
-            this.picPayToolStripMenuItem,
+            this.toolStripMenuItem1.Alignment = ToolStripItemAlignment.Right;
+            this.toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] {
             this.notasDeAtualizaçãoToolStripMenuItem,
             this.toolStripSeparator3,
             this.versão1000ToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
-            this.toolStripMenuItem1.Text = "Libardi";
-            // 
-            // twitterToolStripMenuItem
-            // 
-            this.twitterToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("twitterToolStripMenuItem.Image")));
-            this.twitterToolStripMenuItem.Name = "twitterToolStripMenuItem";
-            this.twitterToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.twitterToolStripMenuItem.Text = "Contato (Twitter)";
-            this.twitterToolStripMenuItem.Click += new System.EventHandler(this.twitterToolStripMenuItem_Click);
-            // 
-            // picPayToolStripMenuItem
-            // 
-            this.picPayToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("picPayToolStripMenuItem.Image")));
-            this.picPayToolStripMenuItem.Name = "picPayToolStripMenuItem";
-            this.picPayToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.picPayToolStripMenuItem.Text = "Doações (PicPay)";
-            this.picPayToolStripMenuItem.Click += new System.EventHandler(this.picPayToolStripMenuItem_Click);
-            // 
+            this.toolStripMenuItem1.Text = "Felipe Pereira";
+            //
             // notasDeAtualizaçãoToolStripMenuItem
             // 
             this.notasDeAtualizaçãoToolStripMenuItem.Name = "notasDeAtualizaçãoToolStripMenuItem";
@@ -444,7 +426,7 @@
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem2.Alignment = ToolStripItemAlignment.Right;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(82, 20);
             this.toolStripMenuItem2.Text = "Chat Global";
@@ -452,7 +434,7 @@
             // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] {
             this.importarToolStripMenuItem,
             this.exportarToolStripMenuItem,
             this.toolStripSeparator2,
@@ -489,7 +471,7 @@
             // 
             // toolStripMenuItem4
             // 
-            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4.DropDownItems.AddRange(new ToolStripItem[] {
             this.atualizarOPWToolStripMenuItem,
             this.calculadoraDeFamaToolStripMenuItem,
             this.checkinDiárioToolStripMenuItem,
@@ -544,7 +526,7 @@
             // 
             // customizarToolStripMenuItem
             // 
-            this.customizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customizarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
             this.arquiteturaToolStripMenuItem,
             this.customizarToolStripMenuItem1,
             this.configurarAtalhosToolStripMenuItem,
@@ -558,7 +540,7 @@
             // 
             // arquiteturaToolStripMenuItem
             // 
-            this.arquiteturaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.arquiteturaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
             this.usar32BitsToolStripMenuItem,
             this.usar64BitsToolStripMenuItem});
             this.arquiteturaToolStripMenuItem.Name = "arquiteturaToolStripMenuItem";
@@ -597,7 +579,7 @@
             // 
             // forçarServidorToolStripMenuItem
             // 
-            this.forçarServidorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.forçarServidorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
             this.toolStripComboBox1});
             this.forçarServidorToolStripMenuItem.Name = "forçarServidorToolStripMenuItem";
             this.forçarServidorToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
@@ -605,12 +587,12 @@
             // 
             // toolStripComboBox1
             // 
-            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.toolStripComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             this.toolStripComboBox1.Items.AddRange(new object[] {
             "NENHUM",
-            "History  1 (PvP)",
-            "History  2 (PvP)",
-            "History  3 (PvP)"});
+            "The Classic PW / Server 1",
+            "The Classic PW / Server 2",
+            "The Classic PW / Server 3"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
@@ -622,7 +604,7 @@
             // 
             // avançadasToolStripMenuItem
             // 
-            this.avançadasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.avançadasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
             this.executáveisEArgumentosToolStripMenuItem,
             this.resetarOProgramaToolStripMenuItem});
             this.avançadasToolStripMenuItem.Name = "avançadasToolStripMenuItem";
@@ -669,9 +651,9 @@
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 411);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.menuStrip1);
@@ -690,15 +672,15 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Perfect Launcher";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -711,69 +693,67 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox usersComboBox;
-        private System.Windows.Forms.Button openButton;
-        private System.Windows.Forms.Timer CrashWatcherTimer;
-        private System.Windows.Forms.Button AddUserButton;
-        private System.Windows.Forms.Button RemoveUserButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cONTA1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONTA2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONTA3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONTA4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cONTA5ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.Timer tempTopMost;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelGlobal;
-        private System.Windows.Forms.Label border1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem twitterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem gerenciarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calculadoraDeFamaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkinDiárioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem combarComAPTToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customizarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem arquiteturaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usar32BitsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usar64BitsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configurarAtalhosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem versão1000ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fecharContasEXCETOToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem atalhosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem checkinDiárioToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem combarComAPTToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fecharContasEXCETOToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem atualizarOPWToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem picPayToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem notasDeAtualizaçãoToolStripMenuItem;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ToolStripMenuItem avançadasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resetarOProgramaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripMenuItem executáveisEArgumentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forçarServidorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private ComboBox usersComboBox;
+        private Button openButton;
+        private Timer CrashWatcherTimer;
+        private Button AddUserButton;
+        private Button RemoveUserButton;
+        private Button button1;
+        private Button button2;
+        private NotifyIcon notifyIcon1;
+        private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem cONTA1ToolStripMenuItem;
+        private ToolStripMenuItem cONTA2ToolStripMenuItem;
+        private ToolStripMenuItem cONTA3ToolStripMenuItem;
+        private ToolStripMenuItem cONTA4ToolStripMenuItem;
+        private ToolStripMenuItem cONTA5ToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem sairToolStripMenuItem;
+        private Timer tempTopMost;
+        private Button button3;
+        private Button button4;
+        private Panel panel1;
+        private Label labelGlobal;
+        private Label border1;
+        private Button button5;
+        private Button button6;
+        private MenuStrip menuStrip1;
+        private Label label1;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem toolStripMenuItem2;
+        private ToolStripMenuItem toolStripMenuItem3;
+        private ToolStripMenuItem toolStripMenuItem4;
+        private ToolStripMenuItem importarToolStripMenuItem;
+        private ToolStripMenuItem exportarToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripMenuItem gerenciarToolStripMenuItem;
+        private ToolStripMenuItem calculadoraDeFamaToolStripMenuItem;
+        private ToolStripMenuItem checkinDiárioToolStripMenuItem;
+        private ToolStripMenuItem combarComAPTToolStripMenuItem;
+        private ToolStripMenuItem customizarToolStripMenuItem;
+        private ToolStripMenuItem customizarToolStripMenuItem1;
+        private ToolStripMenuItem arquiteturaToolStripMenuItem;
+        private ToolStripMenuItem usar32BitsToolStripMenuItem;
+        private ToolStripMenuItem usar64BitsToolStripMenuItem;
+        private ToolStripMenuItem configurarAtalhosToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator3;
+        private ToolStripMenuItem versão1000ToolStripMenuItem;
+        private ToolStripMenuItem logsToolStripMenuItem;
+        private ToolStripMenuItem fecharContasEXCETOToolStripMenuItem;
+        private ToolStripMenuItem atalhosToolStripMenuItem;
+        private ToolStripMenuItem checkinDiárioToolStripMenuItem1;
+        private ToolStripMenuItem combarComAPTToolStripMenuItem1;
+        private ToolStripMenuItem fecharContasEXCETOToolStripMenuItem1;
+        private ToolStripComboBox toolStripComboBox2;
+        private ToolStripSeparator toolStripSeparator4;
+        private ToolStripMenuItem atualizarOPWToolStripMenuItem;
+        private ToolStripMenuItem notasDeAtualizaçãoToolStripMenuItem;
+        private Button button7;
+        private ToolStripMenuItem avançadasToolStripMenuItem;
+        private ToolStripMenuItem resetarOProgramaToolStripMenuItem;
+        private ToolStripSeparator toolStripSeparator5;
+        private ToolStripMenuItem executáveisEArgumentosToolStripMenuItem;
+        private ToolStripMenuItem forçarServidorToolStripMenuItem;
+        private ToolStripComboBox toolStripComboBox1;
     }
 }

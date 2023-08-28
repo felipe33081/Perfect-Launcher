@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class CalcFama
@@ -30,12 +31,12 @@ namespace Perfect_Launcher
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalcFama));
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labelResultado = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new NumericUpDown();
+            this.label1 = new Label();
+            this.label2 = new Label();
+            this.numericUpDown2 = new NumericUpDown();
+            this.label3 = new Label();
+            this.labelResultado = new Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +103,7 @@ namespace Perfect_Launcher
             // 
             // labelResultado
             // 
-            this.labelResultado.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.labelResultado.Dock = DockStyle.Bottom;
             this.labelResultado.Location = new System.Drawing.Point(0, 154);
             this.labelResultado.Name = "labelResultado";
             this.labelResultado.Size = new System.Drawing.Size(444, 37);
@@ -114,7 +115,7 @@ namespace Perfect_Launcher
             // CalcFama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 191);
             this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.label3);
@@ -123,14 +124,14 @@ namespace Perfect_Launcher
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CalcFama";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Fama";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.CalcFama_Load);
@@ -143,11 +144,11 @@ namespace Perfect_Launcher
 
         #endregion
 
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelResultado;
+        private NumericUpDown numericUpDown1;
+        private Label label1;
+        private Label label2;
+        private NumericUpDown numericUpDown2;
+        private Label label3;
+        private Label labelResultado;
     }
 }

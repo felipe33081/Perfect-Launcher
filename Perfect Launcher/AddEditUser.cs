@@ -43,7 +43,7 @@ namespace Perfect_Launcher
                 textBox4.Text = Settings.Default.Nick[Id];
 
                 // Verifica se a descrição bate com alguma da combobox
-                if (comboBox1.Items.Contains(Settings.Default.Classe[Id]))
+                if (comboBox1.Items.Contains(Settings.Default.Classe?[Id]))
                 {
                     checkBox1.Checked = false;
                     comboBox1.SelectedIndex = comboBox1.Items.IndexOf(Settings.Default.Classe[Id]);
@@ -83,6 +83,7 @@ namespace Perfect_Launcher
                 Settings.Default.User[Id] = textBox1.Text;
                 Settings.Default.Passwd[Id] = textBox2.Text;
                 Settings.Default.Classe[Id] = checkBox1.Checked ? textBox3.Text : comboBox1.SelectedItem.ToString();
+                Settings.Default.Nick[Id] = textBox4.Text;
 
                 f1.RefreshUsernamesOnComboBox(Id);
                 Close();

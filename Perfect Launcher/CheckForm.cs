@@ -34,9 +34,16 @@ namespace Perfect_Launcher
                 checkBox9.Checked = Settings.Default.DailyCheckups[9];
             }
 
-            // Sempre carrega o checkbox da torre, pois ele será resetado toda quarta-feira pelo programa
-            // Ao perguntar pro usuário se ele deseja checar por atualizações
-            checkBox10.Checked = Settings.Default.DailyCheckups[10];
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            {
+                checkBox10.Checked = false; // Resetar checkbox [10]
+                                            // Você pode adicionar aqui outras ações relacionadas ao reset de domingo, se necessário.
+            }
+            else
+            {
+                checkBox10.Checked = Settings.Default.DailyCheckups[10];
+            }
+            //checkBox10.Checked = Settings.Default.DailyCheckups[10];
         }
 
         private void CheckForm_FormClosing(object sender, FormClosingEventArgs e)

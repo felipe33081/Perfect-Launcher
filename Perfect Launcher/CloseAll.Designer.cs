@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class CloseAll
@@ -30,9 +31,9 @@ namespace Perfect_Launcher
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CloseAll));
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new Label();
+            this.comboBox1 = new ComboBox();
+            this.button1 = new Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +47,7 @@ namespace Perfect_Launcher
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "NENHUMA"});
@@ -69,20 +70,20 @@ namespace Perfect_Launcher
             // CloseAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(234, 111);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CloseAll";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Fechar contas";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.CloseAll_Load);
@@ -93,8 +94,8 @@ namespace Perfect_Launcher
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private Label label1;
+        private ComboBox comboBox1;
+        private Button button1;
     }
 }

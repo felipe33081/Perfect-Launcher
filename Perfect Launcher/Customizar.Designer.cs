@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class Customizar
@@ -30,16 +31,16 @@ namespace Perfect_Launcher
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customizar));
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new Button();
+            this.textBox1 = new TextBox();
+            this.label1 = new Label();
+            this.label2 = new Label();
+            this.pictureBox1 = new PictureBox();
+            this.pictureBox2 = new PictureBox();
+            this.label3 = new Label();
+            this.colorDialog1 = new ColorDialog();
+            this.trackBar1 = new TrackBar();
+            this.label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -134,7 +135,7 @@ namespace Perfect_Launcher
             // Customizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(423, 211);
             this.Controls.Add(this.label4);
@@ -147,14 +148,14 @@ namespace Perfect_Launcher
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Customizar";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Customizar";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Customizar_Load);
@@ -168,15 +169,15 @@ namespace Perfect_Launcher
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Label label4;
+        private Button button1;
+        private TextBox textBox1;
+        private Label label1;
+        private Label label2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Label label3;
+        private ColorDialog colorDialog1;
+        private TrackBar trackBar1;
+        private Label label4;
     }
 }

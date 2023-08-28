@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class ExeArgs
@@ -29,7 +30,7 @@ namespace Perfect_Launcher
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new TextBox();
             this.SuspendLayout();
             // 
             // textBox3
@@ -42,21 +43,21 @@ namespace Perfect_Launcher
             // ExeArgs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(344, 41);
             this.Controls.Add(this.textBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.Margin = new Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ExeArgs";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Argumentos";
             this.TopMost = true;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExeArgs_FormClosing);
+            this.FormClosing += new FormClosingEventHandler(this.ExeArgs_FormClosing);
             this.Load += new System.EventHandler(this.ExeArgs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -64,6 +65,6 @@ namespace Perfect_Launcher
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox3;
+        private TextBox textBox3;
     }
 }

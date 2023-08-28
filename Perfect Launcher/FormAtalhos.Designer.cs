@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Perfect_Launcher
 {
     partial class FormAtalhos
@@ -29,13 +30,13 @@ namespace Perfect_Launcher
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new Label();
+            this.comboBox1 = new ComboBox();
+            this.comboBox2 = new ComboBox();
+            this.label2 = new Label();
+            this.comboBox3 = new ComboBox();
+            this.label3 = new Label();
+            this.button1 = new Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@ namespace Perfect_Launcher
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Shift Esquerdo",
@@ -74,7 +75,7 @@ namespace Perfect_Launcher
             // 
             // comboBox2
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Shift Esquerdo",
@@ -108,7 +109,7 @@ namespace Perfect_Launcher
             // 
             // comboBox3
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Shift Esquerdo",
@@ -153,7 +154,7 @@ namespace Perfect_Launcher
             // FormAtalhos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(254, 201);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox3);
@@ -163,13 +164,13 @@ namespace Perfect_Launcher
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.Margin = new Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAtalhos";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Atalhos";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.FormAtalhos_Load);
@@ -180,12 +181,12 @@ namespace Perfect_Launcher
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private Label label1;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Label label2;
+        private ComboBox comboBox3;
+        private Label label3;
+        private Button button1;
     }
 }
