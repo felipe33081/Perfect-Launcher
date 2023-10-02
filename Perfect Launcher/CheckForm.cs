@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Perfect_Launcher.Properties;
+using System;
 using System.Windows.Forms;
-using Perfect_Launcher.Properties;
 
 namespace Perfect_Launcher
 {
@@ -34,7 +27,7 @@ namespace Perfect_Launcher
                 checkBox9.Checked = Settings.Default.DailyCheckups[9];
             }
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday && DateTime.Now.Hour >= 21)
             {
                 checkBox10.Checked = false; // Resetar checkbox [10]
                                             // Você pode adicionar aqui outras ações relacionadas ao reset de domingo, se necessário.

@@ -201,7 +201,7 @@ namespace Perfect_Launcher
             // TODO: Desfazer o hash da senha ao abrir
             string passwd = Settings.Default.Passwd[UserId];
             //Nick do personagem a ser logado
-            string nick = Settings.Default.Nick[UserId];
+            string nick = Settings.Default.Nick?[UserId];
 
             // Verifica se a conta já está aberta (só se o OnlyAdd for false)
             for (int i = 0; i < RGames.Count && !bOnlyAdd; i++)
