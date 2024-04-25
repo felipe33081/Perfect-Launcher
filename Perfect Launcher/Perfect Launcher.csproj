@@ -224,6 +224,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pwicon.ico" />
+    <None Include="Resources\button1.Image.png" />
+    <None Include="Resources\button15.BackgroundImage.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

@@ -1007,7 +1007,7 @@ namespace Perfect_Launcher
         {
             // Tamanho do form full 535; 465
             // Tamanho do form encolhido 190; 310
-            Size Pequeno = new Size(190, 310);
+            Size Pequeno = new Size(190, 360);
             Size = Pequeno;
             tabControl1.SelectedIndex = 1;
         }
@@ -1023,7 +1023,17 @@ namespace Perfect_Launcher
 
         private void button14_Click(object sender, EventArgs e)
         {
+            button10_Click(this, e);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
             button5_Click(this, e);
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            checkBox1_CheckedChanged(this, e);
         }
 
         private void button15_Click(object sender, EventArgs e)

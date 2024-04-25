@@ -54,6 +54,7 @@ namespace Perfect_Launcher
             this.button9 = new Button();
             this.button10 = new Button();
             this.checkBox1 = new CheckBox();
+            this.checkBox5 = new CheckBox();
             this.groupBox3 = new GroupBox();
             this.groupBox4 = new GroupBox();
             this.button11 = new Button();
@@ -63,13 +64,14 @@ namespace Perfect_Launcher
             this.pularParaContaDeCimaToolStripMenuItem = new ToolStripMenuItem();
             this.tecladoNuméricoToolStripMenuItem = new ToolStripMenuItem();
             this.tabControl1 = new TabControl();
+            this.tabPage1 = new TabPage();
+            this.button12 = new Button();
             this.tabPage2 = new TabPage();
             this.listBox3 = new ListBox();
             this.button14 = new Button();
+            this.button17 = new Button();
             this.button15 = new Button();
             this.button13 = new Button();
-            this.tabPage1 = new TabPage();
-            this.button12 = new Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -78,8 +80,8 @@ namespace Perfect_Launcher
             this.groupBox4.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
@@ -248,7 +250,7 @@ namespace Perfect_Launcher
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(129, 333);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 16);
+            this.label3.Size = new System.Drawing.Size(116, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "Intervalo F1 até F4";
             // 
@@ -257,7 +259,7 @@ namespace Perfect_Launcher
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(279, 333);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 16);
+            this.label4.Size = new System.Drawing.Size(116, 16);
             this.label4.TabIndex = 14;
             this.label4.Text = "Intervalo F5 até F8";
             // 
@@ -439,72 +441,6 @@ namespace Perfect_Launcher
             this.tabControl1.Size = new System.Drawing.Size(529, 459);
             this.tabControl1.TabIndex = 24;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.listBox3);
-            this.tabPage2.Controls.Add(this.button14);
-            this.tabPage2.Controls.Add(this.button15);
-            this.tabPage2.Controls.Add(this.button13);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(521, 430);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(6, 6);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.ScrollAlwaysVisible = true;
-            this.listBox3.Size = new System.Drawing.Size(165, 228);
-            this.listBox3.TabIndex = 28;
-            this.listBox3.TabStop = false;
-            this.listBox3.Click += new System.EventHandler(this.listBox3_Click);
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
-            this.listBox3.DoubleClick += new System.EventHandler(this.listBox3_DoubleClick);
-            // 
-            // button14
-            // 
-            this.button14.FlatStyle = FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(6, 240);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(103, 25);
-            this.button14.TabIndex = 26;
-            this.button14.TabStop = false;
-            this.button14.Text = "COMBAR";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // button15
-            // 
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button15.Enabled = false;
-            this.button15.FlatStyle = FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(115, 240);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(25, 25);
-            this.button15.TabIndex = 27;
-            this.button15.TabStop = false;
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button13.FlatStyle = FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(146, 240);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(25, 25);
-            this.button13.TabIndex = 25;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.button12);
@@ -542,6 +478,98 @@ namespace Perfect_Launcher
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.listBox3);
+            this.tabPage2.Controls.Add(this.button14);
+            this.tabPage2.Controls.Add(this.button17);
+            this.tabPage2.Controls.Add(this.button15);
+            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.checkBox5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(519, 430);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // listBox3
+            // 
+            this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 16;
+            this.listBox3.Location = new System.Drawing.Point(6, 6);
+            this.listBox3.Name = "listBox3";
+            this.listBox3.ScrollAlwaysVisible = true;
+            this.listBox3.Size = new System.Drawing.Size(165, 228);
+            this.listBox3.TabIndex = 28;
+            this.listBox3.TabStop = false;
+            this.listBox3.Click += new System.EventHandler(this.listBox3_Click);
+            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            this.listBox3.DoubleClick += new System.EventHandler(this.listBox3_DoubleClick);
+            // 
+            // button14
+            // 
+            this.button14.FlatStyle = FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(6, 240);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(103, 25);
+            this.button14.TabIndex = 26;
+            this.button14.TabStop = false;
+            this.button14.Text = "SÓ F4";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
+            this.button15.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button15.Enabled = false;
+            this.button15.FlatStyle = FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(115, 240);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(25, 25);
+            this.button15.TabIndex = 27;
+            this.button15.TabStop = false;
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
+            this.button13.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button13.FlatStyle = FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(146, 240);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(25, 25);
+            this.button13.TabIndex = 25;
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button17
+            // 
+            this.button17.FlatStyle = FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(6, 285);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(165, 33);
+            this.button17.TabIndex = 29;
+            this.button17.TabStop = false;
+            this.button17.Text = "COMBAR";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.FlatStyle = FlatStyle.Flat;
+            //this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox5.Location = new System.Drawing.Point(6, 265);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(70, 20);
+            this.checkBox5.TabIndex = 28;
+            this.checkBox5.Text = "F4 EM LOOP";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
             // Combo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -572,9 +600,9 @@ namespace Perfect_Launcher
             this.groupBox4.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -603,6 +631,7 @@ namespace Perfect_Launcher
         private Button button9;
         private Button button10;
         private CheckBox checkBox1;
+        private CheckBox checkBox5;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
         private Button button11;
@@ -616,6 +645,7 @@ namespace Perfect_Launcher
         private TabPage tabPage2;
         private Button button13;
         private Button button14;
+        private Button button17;
         private Button button15;
         private ListBox listBox3;
         private ToolStripMenuItem pularParaContaDeCimaToolStripMenuItem;
