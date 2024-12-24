@@ -71,7 +71,7 @@ namespace Perfect_Launcher
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(187, 20);
             this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Volta ao Mundo";
+            this.checkBox2.Text = "Morai";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -81,7 +81,7 @@ namespace Perfect_Launcher
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(180, 20);
             this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Diária Fiscal de Presença";
+            this.checkBox3.Text = "Rush 89";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -91,7 +91,7 @@ namespace Perfect_Launcher
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(124, 20);
             this.checkBox4.TabIndex = 9;
-            this.checkBox4.Text = "Token";
+            this.checkBox4.Text = "Rush 99";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox5
@@ -121,7 +121,7 @@ namespace Perfect_Launcher
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(165, 20);
             this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Rush 89";
+            this.checkBox7.Text = "Volta ao Mundo";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox8
@@ -131,7 +131,7 @@ namespace Perfect_Launcher
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(156, 20);
             this.checkBox8.TabIndex = 7;
-            this.checkBox8.Text = "Rush 99";
+            this.checkBox8.Text = "Diária Fiscal de Presença";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
@@ -151,7 +151,7 @@ namespace Perfect_Launcher
             this.checkBox10.Name = "checkBox10";
             this.checkBox10.Size = new System.Drawing.Size(126, 20);
             this.checkBox10.TabIndex = 10;
-            this.checkBox10.Text = "Semanal da Frost";
+            this.checkBox10.Text = "Semanal 100/105";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // CheckForm

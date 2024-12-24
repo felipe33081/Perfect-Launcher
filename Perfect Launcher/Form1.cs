@@ -266,7 +266,7 @@ namespace Perfect_Launcher
                         //The Classic PW / Server 2
                         //The Classic PW / Server 3
                         case "The Classic PW / Server 1":
-                            gateway = "29001:tcpwserverrs.theclassic.games";
+                            gateway = "29000:newpwserverrs.theclassic.games";
                             break;
                         case "The Classic PW / Server 2":
                             gateway = "39101:tcpwserverrs.theclassic.games";
@@ -325,10 +325,10 @@ namespace Perfect_Launcher
                 // Assim, aparecerá a lista de servidores pro jogador escolher
                 File.WriteAllText(Application.StartupPath + "\\userdata\\accounts.txt", "false");
             }
-
+            
             // Argumentos que serão usados
             //@ToDo: Adicionar novo parametro de entrada para o nick do personagem
-            string args = " startbypatcher " + " user:" + user + " pwd:" + passwd + " role:" + nick;
+            string args = " nocheck rendernofocus startbypatcher " + " user:" + user + " pwd:" + passwd + " role:" + nick;
 
             // Cria uma classe temporária para ser armazenada na lista
             RunningGames rg = new RunningGames();
@@ -359,8 +359,8 @@ namespace Perfect_Launcher
             if (OpenRecently.Count > 5)
                 OpenRecently.RemoveAt(0);
 
-            // Atualiza os menus com as contas recentes
-            UpdateOpenRecentlyMenu();
+            //// Atualiza os menus com as contas recentes
+            //UpdateOpenRecentlyMenu();
 
             // Chama a função de update nos forms necessários (caso estejam abertos)
             if (ComboForm != null)
@@ -404,64 +404,12 @@ namespace Perfect_Launcher
             {
                 while (reader.ReadLine() != null)
                     lineCounter++;
-                
+
                 return lineCounter;
             }
         }
 
         public List<RunningGames> GetRunningGames() { return RGames; }
-
-        private async void RollGlobalMessages()
-        {
-            if (bBlockRoll)
-                return;
-
-            if (labelGlobal.Top == ScrollTextDefaultValue)
-            {
-                await Task.Delay(3500);
-            }
-
-            await Task.Delay(10);
-
-            labelGlobal.Top -= 1;
-
-            if (labelGlobal.Top <= -25)
-            {
-                // Move pra baixo
-                labelGlobal.Top = 25;
-
-                bool bFound = false;
-
-                // Procura a frase atual no array
-                for (int i = 0; i < MsgGlobal.Length; i++)
-                {
-                    // Acha a mensagem na lista
-                    // A msg tá no index 0
-                    // o Lenght é 2
-                    // último index é 1
-                    if (labelGlobal.Text == MsgGlobal[i])
-                    {
-                        if ((i + 1) <= (MsgGlobal.Length - 1))
-                            labelGlobal.Text = MsgGlobal[i + 1];
-                        else
-                            labelGlobal.Text = MsgGlobal[0];
-
-                        bFound = true;
-                        break;
-                    }
-                }
-                if (!bFound)
-                {
-                    if (MsgGlobal.Length > 0)
-                        labelGlobal.Text = MsgGlobal[0];
-                }
-
-            }
-
-            // Chama a func dnv (se puder)
-            if (!bBlockRoll)
-                RollGlobalMessages();
-        }
 
         public void UpdateArchChecks()
         {
@@ -540,8 +488,6 @@ namespace Perfect_Launcher
             if (!Directory.Exists(Application.StartupPath + "\\Perfect Launcher\\Erros"))
                 Directory.CreateDirectory(Application.StartupPath + "\\Perfect Launcher\\Erros");
 
-            RollGlobalMessages();
-            DownloadMessages();
             RefreshUsernamesOnComboBox();
 
             //CheckForClientUpdates();
@@ -847,7 +793,6 @@ namespace Perfect_Launcher
             // Volta à rodar as mensagens
             labelGlobal.Top = ScrollTextDefaultValue;
             bBlockRoll = false;
-            RollGlobalMessages();
 
             // Atualiza o comboBox
             RefreshUsernamesOnComboBox();
@@ -872,37 +817,6 @@ namespace Perfect_Launcher
             {
                 return false;
             }
-        }
-
-        private async void DownloadMessages()
-        {
-            // Tem internet?
-            if (!CheckForInternetConnection())
-            {
-                labelGlobal.Text = "Sem conexão com a internet.";
-                return;
-            }
-
-            // Verifica se tem internet e se já passou 1h desde o último request pro global
-            string hour = DateTime.Now.ToString("HH");
-
-            if (hour != Settings.Default.LastGlobalUpdate)
-            {
-                // Pede um novo request, salva no bloco de notas
-                WebClient wc = new WebClient();
-                wc.Encoding = Encoding.UTF8;
-                string url = "https://pastebin.com/raw/1B7k6kFa";
-                string content = wc.DownloadString(url);
-
-                await Task.Delay(50);
-
-                File.WriteAllText(Application.StartupPath + "\\Perfect Launcher\\Global.txt", content, Encoding.UTF8);
-            }
-
-            MsgGlobal = File.ReadAllLines(Application.StartupPath + "\\Perfect Launcher\\Global.txt", Encoding.UTF8);
-
-            // Salva o último horário atualizado
-            Settings.Default.LastGlobalUpdate = hour;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -1036,12 +950,6 @@ namespace Perfect_Launcher
 
         }
 
-        private void labelGlobal_Click(object sender, EventArgs e)
-        {
-            Global g = new Global(MsgGlobal);
-            g.ShowDialog();
-        }
-
         private void customizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -1071,12 +979,6 @@ namespace Perfect_Launcher
         {
             Manage M = new Manage(this);
             M.ShowDialog();
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Global g = new Global(MsgGlobal);
-            g.ShowDialog();
         }
 
         private void customizarToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -1186,7 +1088,6 @@ namespace Perfect_Launcher
 
                 foreach (string s in Contas)
                 {
-
                     // ¹conta² ³senha£ ¢classe¬
                     var start = s.IndexOf("¹") + 1;
                     var User = s.Substring(start, s.IndexOf("²") - start);
@@ -1200,11 +1101,21 @@ namespace Perfect_Launcher
 
                     var start3 = s.IndexOf("¢") + 1;
                     var Classe = s.Substring(start3, s.IndexOf("¬") - start3);
-                    
-                    var start4 = s.IndexOf("4") + 1;
-                    var Nick = s.Substring(start4, s.IndexOf("5") - start4);
 
-                    m.AddUser(User, Passwd, Classe, Nick);
+                    // Corrigido: Usar LastIndexOf para garantir o último "5"
+                    var start4 = s.IndexOf("┼") + 1;
+                    var end5 = s.IndexOf("◄"); // Pega o último "5" na string
+
+                    if (start4 != -1 && end5 != -1 && end5 > start4)
+                    {
+                        var Nick = s.Substring(start4, end5 - start4);
+                        m.AddUser(User, Passwd, Classe, Nick);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Delimitadores '4' ou '5' não encontrados ou inválidos.");
+                        continue;
+                    }
 
                     Contador++;
                 }
@@ -1231,7 +1142,7 @@ namespace Perfect_Launcher
 
             string Tudo = "";
             for (int i = 0; i < Settings.Default.User.Count; i++)
-                Tudo += "¹" + Settings.Default.User[i] + "²³" + Settings.Default.Passwd[i] + "£¢" + Settings.Default.Classe[i] + "¬4" + Settings.Default.Nick[i] + "5\n";
+                Tudo += "¹" + Settings.Default.User[i] + "²³" + Settings.Default.Passwd[i] + "£¢" + Settings.Default.Classe[i] + "┼" + Settings.Default.Nick[i] + "◄\n";
 
             // Salva tudo
             SaveFileDialog sd = new SaveFileDialog();

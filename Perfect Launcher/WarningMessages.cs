@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 using System.Windows.Forms;
 
 namespace Perfect_Launcher
@@ -38,7 +33,7 @@ namespace Perfect_Launcher
                     string NomeDoArquivo = DateTime.Now.ToString("G");
                     NomeDoArquivo = NomeDoArquivo.Replace("/", "-");
                     NomeDoArquivo = NomeDoArquivo.Replace(":", ".");
-                    File.WriteAllText(Application.StartupPath + "\\Perfect Launcher\\Logs\\" + NomeDoArquivo + ".txt", Msg);
+                    //File.WriteAllText(Application.StartupPath + "\\Perfect Launcher\\Logs\\" + NomeDoArquivo + ".txt", Msg);
 
                     Icon = MessageBoxIcon.Error;
                     DialogChoice = MessageBox.Show(new Form { TopMost = true }, Msg, "Perfect Launcher", Buttons, Icon);

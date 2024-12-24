@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Perfect_Launcher.Properties;
+﻿using Perfect_Launcher.Properties;
 
 namespace Perfect_Launcher
 {

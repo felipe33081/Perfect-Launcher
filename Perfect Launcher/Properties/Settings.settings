@@ -6,10 +6,10 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Interval1" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1150</Value>
+      <Value Profile="(Default)">900</Value>
     </Setting>
     <Setting Name="Interval2" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">3200</Value>
+      <Value Profile="(Default)">1300</Value>
     </Setting>
     <Setting Name="LastIndexUsed" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -21,7 +21,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="BackgroundColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">Black</Value>
+      <Value Profile="(Default)">Blue</Value>
     </Setting>
     <Setting Name="FontColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)">White</Value>

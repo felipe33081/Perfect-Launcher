@@ -147,12 +147,6 @@
     <Compile Include="FormAtalhos.Designer.cs">
       <DependentUpon>FormAtalhos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Global.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Global.Designer.cs">
-      <DependentUpon>Global.cs</DependentUpon>
-    </Compile>
     <Compile Include="Manage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,9 +185,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAtalhos.resx">
       <DependentUpon>FormAtalhos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Global.resx">
-      <DependentUpon>Global.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manage.resx">
       <DependentUpon>Manage.cs</DependentUpon>

@@ -121,7 +121,9 @@ namespace Perfect_Launcher
             "BÁRBARO",
             "FEITICEIRA",
             "MERCENÁRIO(A)",
-            "ESPIRITUALISTA"});
+            "ESPIRITUALISTA",
+            "ARCANO",
+            "MÍSTICO"});
             this.comboBox1.Location = new System.Drawing.Point(23, 195);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(210, 24);

@@ -32,68 +32,67 @@ namespace Perfect_Launcher
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.usersComboBox = new ComboBox();
-            this.openButton = new Button();
-            this.CrashWatcherTimer = new Timer(this.components);
-            this.AddUserButton = new Button();
-            this.RemoveUserButton = new Button();
-            this.button1 = new Button();
-            this.button2 = new Button();
-            this.notifyIcon1 = new NotifyIcon(this.components);
-            this.contextMenuStrip1 = new ContextMenuStrip(this.components);
-            this.toolStripComboBox2 = new ToolStripComboBox();
-            this.toolStripSeparator4 = new ToolStripSeparator();
-            this.cONTA1ToolStripMenuItem = new ToolStripMenuItem();
-            this.cONTA2ToolStripMenuItem = new ToolStripMenuItem();
-            this.cONTA3ToolStripMenuItem = new ToolStripMenuItem();
-            this.cONTA4ToolStripMenuItem = new ToolStripMenuItem();
-            this.cONTA5ToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripSeparator1 = new ToolStripSeparator();
-            this.atalhosToolStripMenuItem = new ToolStripMenuItem();
-            this.checkinDiárioToolStripMenuItem1 = new ToolStripMenuItem();
-            this.combarComAPTToolStripMenuItem1 = new ToolStripMenuItem();
-            this.fecharContasEXCETOToolStripMenuItem1 = new ToolStripMenuItem();
-            this.sairToolStripMenuItem = new ToolStripMenuItem();
-            this.tempTopMost = new Timer(this.components);
-            this.button3 = new Button();
-            this.button4 = new Button();
-            this.panel1 = new Panel();
-            this.labelGlobal = new Label();
-            this.border1 = new Label();
-            this.button5 = new Button();
-            this.button6 = new Button();
-            this.menuStrip1 = new MenuStrip();
-            this.toolStripMenuItem1 = new ToolStripMenuItem();
-            this.notasDeAtualizaçãoToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripSeparator3 = new ToolStripSeparator();
-            this.versão1000ToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripMenuItem2 = new ToolStripMenuItem();
-            this.toolStripMenuItem3 = new ToolStripMenuItem();
-            this.importarToolStripMenuItem = new ToolStripMenuItem();
-            this.exportarToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripSeparator2 = new ToolStripSeparator();
-            this.gerenciarToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripMenuItem4 = new ToolStripMenuItem();
-            this.atualizarOPWToolStripMenuItem = new ToolStripMenuItem();
-            this.calculadoraDeFamaToolStripMenuItem = new ToolStripMenuItem();
-            this.checkinDiárioToolStripMenuItem = new ToolStripMenuItem();
-            this.combarComAPTToolStripMenuItem = new ToolStripMenuItem();
-            this.fecharContasEXCETOToolStripMenuItem = new ToolStripMenuItem();
-            this.logsToolStripMenuItem = new ToolStripMenuItem();
-            this.customizarToolStripMenuItem = new ToolStripMenuItem();
-            this.arquiteturaToolStripMenuItem = new ToolStripMenuItem();
-            this.usar32BitsToolStripMenuItem = new ToolStripMenuItem();
-            this.usar64BitsToolStripMenuItem = new ToolStripMenuItem();
-            this.customizarToolStripMenuItem1 = new ToolStripMenuItem();
-            this.configurarAtalhosToolStripMenuItem = new ToolStripMenuItem();
-            this.forçarServidorToolStripMenuItem = new ToolStripMenuItem();
-            this.toolStripComboBox1 = new ToolStripComboBox();
-            this.toolStripSeparator5 = new ToolStripSeparator();
-            this.avançadasToolStripMenuItem = new ToolStripMenuItem();
-            this.executáveisEArgumentosToolStripMenuItem = new ToolStripMenuItem();
-            this.resetarOProgramaToolStripMenuItem = new ToolStripMenuItem();
-            this.label1 = new Label();
-            this.button7 = new Button();
+            this.usersComboBox = new System.Windows.Forms.ComboBox();
+            this.openButton = new System.Windows.Forms.Button();
+            this.CrashWatcherTimer = new System.Windows.Forms.Timer(this.components);
+            this.AddUserButton = new System.Windows.Forms.Button();
+            this.RemoveUserButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.cONTA1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTA2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTA3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTA4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONTA5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.atalhosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkinDiárioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.combarComAPTToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharContasEXCETOToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tempTopMost = new System.Windows.Forms.Timer(this.components);
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelGlobal = new System.Windows.Forms.Label();
+            this.border1 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.notasDeAtualizaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.versão1000ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.gerenciarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.atualizarOPWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculadoraDeFamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkinDiárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.combarComAPTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharContasEXCETOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arquiteturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usar32BitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usar64BitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customizarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.configurarAtalhosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forçarServidorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.avançadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.executáveisEArgumentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetarOProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -101,11 +100,11 @@ namespace Perfect_Launcher
             // 
             // usersComboBox
             // 
-            this.usersComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.usersComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.usersComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersComboBox.FormattingEnabled = true;
             this.usersComboBox.Location = new System.Drawing.Point(201, 301);
-            this.usersComboBox.Margin = new Padding(4);
+            this.usersComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.usersComboBox.Name = "usersComboBox";
             this.usersComboBox.Size = new System.Drawing.Size(200, 28);
             this.usersComboBox.TabIndex = 0;
@@ -113,7 +112,7 @@ namespace Perfect_Launcher
             // openButton
             // 
             this.openButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.openButton.FlatStyle = FlatStyle.Flat;
+            this.openButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.openButton.ForeColor = System.Drawing.Color.White;
             this.openButton.Location = new System.Drawing.Point(201, 334);
             this.openButton.Name = "openButton";
@@ -131,7 +130,7 @@ namespace Perfect_Launcher
             // AddUserButton
             // 
             this.AddUserButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.AddUserButton.FlatStyle = FlatStyle.Flat;
+            this.AddUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddUserButton.ForeColor = System.Drawing.Color.White;
             this.AddUserButton.Location = new System.Drawing.Point(406, 301);
             this.AddUserButton.Name = "AddUserButton";
@@ -144,7 +143,7 @@ namespace Perfect_Launcher
             // RemoveUserButton
             // 
             this.RemoveUserButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RemoveUserButton.FlatStyle = FlatStyle.Flat;
+            this.RemoveUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveUserButton.ForeColor = System.Drawing.Color.White;
             this.RemoveUserButton.Location = new System.Drawing.Point(436, 301);
             this.RemoveUserButton.Name = "RemoveUserButton";
@@ -184,11 +183,11 @@ namespace Perfect_Launcher
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "Perfect Launcher";
-            this.notifyIcon1.MouseClick += new MouseEventHandler(this.notifyIcon1_MouseClick);
+            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Items.AddRange(new ToolStripItem[] {
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox2,
             this.toolStripSeparator4,
             this.cONTA1ToolStripMenuItem,
@@ -204,7 +203,7 @@ namespace Perfect_Launcher
             // 
             // toolStripComboBox2
             // 
-            this.toolStripComboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.toolStripComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolStripComboBox2.Name = "toolStripComboBox2";
             this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox2.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox2_SelectedIndexChanged);
@@ -261,7 +260,7 @@ namespace Perfect_Launcher
             // 
             // atalhosToolStripMenuItem
             // 
-            this.atalhosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.atalhosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.checkinDiárioToolStripMenuItem1,
             this.combarComAPTToolStripMenuItem1,
             this.fecharContasEXCETOToolStripMenuItem1});
@@ -327,7 +326,7 @@ namespace Perfect_Launcher
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.labelGlobal);
-            this.panel1.Dock = DockStyle.Bottom;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 386);
@@ -338,7 +337,7 @@ namespace Perfect_Launcher
             // labelGlobal
             // 
             this.labelGlobal.BackColor = System.Drawing.Color.Transparent;
-            this.labelGlobal.Cursor = Cursors.Hand;
+            this.labelGlobal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelGlobal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGlobal.Location = new System.Drawing.Point(0, 0);
             this.labelGlobal.Name = "labelGlobal";
@@ -346,7 +345,6 @@ namespace Perfect_Launcher
             this.labelGlobal.TabIndex = 0;
             this.labelGlobal.Text = "Bem-vindo ao Perfect Launcher!";
             this.labelGlobal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelGlobal.Click += new System.EventHandler(this.labelGlobal_Click);
             // 
             // border1
             // 
@@ -382,9 +380,8 @@ namespace Perfect_Launcher
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.menuStrip1.Items.AddRange(new ToolStripItem[] {
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
             this.toolStripMenuItem3,
             this.toolStripMenuItem4,
             this.customizarToolStripMenuItem});
@@ -396,15 +393,15 @@ namespace Perfect_Launcher
             // 
             // toolStripMenuItem1
             // 
-            this.toolStripMenuItem1.Alignment = ToolStripItemAlignment.Right;
-            this.toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] {
+            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.notasDeAtualizaçãoToolStripMenuItem,
             this.toolStripSeparator3,
             this.versão1000ToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(56, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(95, 20);
             this.toolStripMenuItem1.Text = "Felipe Pereira";
-            //
+            // 
             // notasDeAtualizaçãoToolStripMenuItem
             // 
             this.notasDeAtualizaçãoToolStripMenuItem.Name = "notasDeAtualizaçãoToolStripMenuItem";
@@ -424,17 +421,9 @@ namespace Perfect_Launcher
             this.versão1000ToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.versão1000ToolStripMenuItem.Text = "Versão 1.0.0.3";
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Alignment = ToolStripItemAlignment.Right;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(82, 20);
-            this.toolStripMenuItem2.Text = "Chat Global";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
             // toolStripMenuItem3
             // 
-            this.toolStripMenuItem3.DropDownItems.AddRange(new ToolStripItem[] {
+            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importarToolStripMenuItem,
             this.exportarToolStripMenuItem,
             this.toolStripSeparator2,
@@ -446,32 +435,32 @@ namespace Perfect_Launcher
             // importarToolStripMenuItem
             // 
             this.importarToolStripMenuItem.Name = "importarToolStripMenuItem";
-            this.importarToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.importarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importarToolStripMenuItem.Text = "Importar";
             this.importarToolStripMenuItem.Click += new System.EventHandler(this.importarToolStripMenuItem_Click_1);
             // 
             // exportarToolStripMenuItem
             // 
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exportarToolStripMenuItem.Text = "Exportar";
             this.exportarToolStripMenuItem.Click += new System.EventHandler(this.exportarToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(126, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // gerenciarToolStripMenuItem
             // 
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gerenciarToolStripMenuItem.Text = "Gerenciar";
             this.gerenciarToolStripMenuItem.Click += new System.EventHandler(this.gerenciarToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
-            this.toolStripMenuItem4.DropDownItems.AddRange(new ToolStripItem[] {
+            this.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.atualizarOPWToolStripMenuItem,
             this.calculadoraDeFamaToolStripMenuItem,
             this.checkinDiárioToolStripMenuItem,
@@ -526,7 +515,7 @@ namespace Perfect_Launcher
             // 
             // customizarToolStripMenuItem
             // 
-            this.customizarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.customizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquiteturaToolStripMenuItem,
             this.customizarToolStripMenuItem1,
             this.configurarAtalhosToolStripMenuItem,
@@ -540,7 +529,7 @@ namespace Perfect_Launcher
             // 
             // arquiteturaToolStripMenuItem
             // 
-            this.arquiteturaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.arquiteturaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usar32BitsToolStripMenuItem,
             this.usar64BitsToolStripMenuItem});
             this.arquiteturaToolStripMenuItem.Name = "arquiteturaToolStripMenuItem";
@@ -579,7 +568,7 @@ namespace Perfect_Launcher
             // 
             // forçarServidorToolStripMenuItem
             // 
-            this.forçarServidorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.forçarServidorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripComboBox1});
             this.forçarServidorToolStripMenuItem.Name = "forçarServidorToolStripMenuItem";
             this.forçarServidorToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
@@ -587,7 +576,7 @@ namespace Perfect_Launcher
             // 
             // toolStripComboBox1
             // 
-            this.toolStripComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolStripComboBox1.Items.AddRange(new object[] {
             "NENHUM",
             "The Classic PW / Server 1",
@@ -604,7 +593,7 @@ namespace Perfect_Launcher
             // 
             // avançadasToolStripMenuItem
             // 
-            this.avançadasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] {
+            this.avançadasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.executáveisEArgumentosToolStripMenuItem,
             this.resetarOProgramaToolStripMenuItem});
             this.avançadasToolStripMenuItem.Name = "avançadasToolStripMenuItem";
@@ -651,9 +640,9 @@ namespace Perfect_Launcher
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 411);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.menuStrip1);
@@ -672,15 +661,15 @@ namespace Perfect_Launcher
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfect Launcher";
-            this.FormClosing += new FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -720,7 +709,6 @@ namespace Perfect_Launcher
         private MenuStrip menuStrip1;
         private Label label1;
         private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem toolStripMenuItem4;
         private ToolStripMenuItem importarToolStripMenuItem;

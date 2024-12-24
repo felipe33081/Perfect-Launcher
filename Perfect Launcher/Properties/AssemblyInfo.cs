@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Felipe Pereira")]
 [assembly: AssemblyProduct("Perfect Launcher")]
-[assembly: AssemblyCopyright("Copyright © Felipe Pereira 2021")]
+[assembly: AssemblyCopyright("Copyright © Felipe Pereira 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
