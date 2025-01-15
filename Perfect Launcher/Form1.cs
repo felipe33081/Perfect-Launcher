@@ -46,10 +46,9 @@ namespace Perfect_Launcher
         // Bloqueia a troca de arquitetura caso algum jogo esteja aberto
         public bool bBlockArchChange = false;
 
-        const string Exe32 = "elementclient_32.exe";
-        const string Exe64 = "ELEMENTCLIENT.exe";
+        const string Exe64 = "elementclient_64.exe";
 
-        [DllImport("user32.dll")]
+        [DllImport("user64.dll")]
         internal static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
         public Form1()
@@ -59,7 +58,7 @@ namespace Perfect_Launcher
             ScrollTextDefaultValue = labelGlobal.Top;
 
             // Checa se o programa está na pasta correta
-            if (!File.Exists(Application.StartupPath + "\\" + Exe64) && !File.Exists(Application.StartupPath + "\\" + Exe32))
+            if (!File.Exists(Application.StartupPath + "\\" + Exe64))
             {
                 WM.ShowMessage("ElementClient.exe não foi encontrado!\nPor favor, coloque este launcher dentro da pasta \"element\" do seu PW.");
 
@@ -67,9 +66,9 @@ namespace Perfect_Launcher
                 char[] Disk = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
 
                 foreach (char c in Disk)
-                    if (Directory.Exists(c + ":\\Level Up\\Perfect World\\element"))
+                    if (Directory.Exists(c + ":\\Level Up\\Perfect World\\element\\x64"))
                     {
-                        Process.Start(c + ":\\Level Up\\Perfect World\\element");
+                        Process.Start(c + ":\\Level Up\\Perfect World\\element\\x64");
                         break;
                     }
 
@@ -328,14 +327,15 @@ namespace Perfect_Launcher
             
             // Argumentos que serão usados
             //@ToDo: Adicionar novo parametro de entrada para o nick do personagem
-            string args = " nocheck rendernofocus startbypatcher " + " user:" + user + " pwd:" + passwd + " role:" + nick;
+            string args = " startbypatcher" + " user:" + user + " pwd:" + passwd + " role:" + nick;
 
             // Cria uma classe temporária para ser armazenada na lista
             RunningGames rg = new RunningGames();
 
             // Cria o processo, seta seu id e o usuário                    // Abre conforme a setting
+            var path = Application.StartupPath + "\\" + Exe64;
             if (!bOnlyAdd)
-                rg.ProcessId = Process.Start(Application.StartupPath + "\\" + (Settings.Default.bUse64 ? Exe64 : Exe32), args).Id;
+                rg.ProcessId = Process.Start(path, args).Id;
             else
                 rg.ProcessId = ProcessId;
 
@@ -510,7 +510,7 @@ namespace Perfect_Launcher
                     var processId = s.Substring(start2, s.IndexOf("}") - start2);
 
                     // Pega os processos do PW abertos, e verifica se o ID bate
-                    Process[] pr = Process.GetProcessesByName(Settings.Default.bUse64 ? Exe64.Replace(".exe", "") : Exe32.Replace(".exe", ""));
+                    Process[] pr = Process.GetProcessesByName(Exe64.Replace(".exe", ""));
                     foreach (Process Process in pr)
                     {
                         // Se o id do processo for igual ao id do processo salvo, adiciona a conta como aberta
@@ -660,7 +660,7 @@ namespace Perfect_Launcher
                 Process p = Process.GetProcessById(ProcessId);
 
                 // Checa se o processo bate com o do jogo                    // .exe minúsculo no caso de ser x64 e maiúsculo no caso de ser x32
-                string ProcessName = (Settings.Default.bUse64 ? Exe64 : Exe32).Replace(Settings.Default.bUse64 ? ".exe" : ".EXE", "");
+                string ProcessName = Exe64.Replace(Settings.Default.bUse64 ? ".exe" : ".EXE", "");
                 if (p.ProcessName == ProcessName)
                     return true;
                 else

@@ -240,7 +240,7 @@ namespace Perfect_Launcher
             this.numericUpDown1.TabIndex = 11;
             this.numericUpDown1.TabStop = false;
             this.numericUpDown1.Value = new decimal(new int[] {
-            1150,
+            900,
             0,
             0,
             0});
@@ -281,7 +281,7 @@ namespace Perfect_Launcher
             this.numericUpDown2.TabIndex = 13;
             this.numericUpDown2.TabStop = false;
             this.numericUpDown2.Value = new decimal(new int[] {
-            3150,
+            1400,
             0,
             0,
             0});
