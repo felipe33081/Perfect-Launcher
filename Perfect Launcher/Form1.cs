@@ -261,20 +261,29 @@ namespace Perfect_Launcher
                     string gateway;
                     switch (Settings.Default.ForceServer)
                     {
-                        //The Classic PW / Server 1
-                        //The Classic PW / Server 2
-                        //The Classic PW / Server 3
-                        case "The Classic PW / Server 1":
-                            gateway = "29000:newpwserverrs.theclassic.games";
+                        //History 1(PVP)
+                        //History 2(PVP)
+                        //History 3(PVP)
+                        case "History 1(PVP)":
+                            gateway = "29000:181.215.236.187";
                             break;
-                        case "The Classic PW / Server 2":
-                            gateway = "39101:tcpwserverrs.theclassic.games";
+                        case "History 2(PVP)":
+                            gateway = "29000:181.215.236.187";
                             break;
-                        case "The Classic PW / Server 3":
-                            gateway = "39201:tcpwserverrs.theclassic.games";
+                        case "History 3(PVP)":
+                            gateway = "29000:181.215.236.188";
+                            break;
+                        case "History 4(PVP)":
+                            gateway = "29001:181.215.236.188";
+                            break;
+                        case "History 5(PVP)":
+                            gateway = "29000:189.127.165.110";
+                            break;
+                        case "History 6(PVP)":
+                            gateway = "29000:189.127.165.110";
                             break;
                         default:
-                            gateway = "29001:tcpwserverrs.theclassic.games";
+                            gateway = "29000:181.215.236.187";
                             break;
                     }
                     string UserBase64 = Convert.ToBase64String(Encoding.Unicode.GetBytes(user));
@@ -327,7 +336,7 @@ namespace Perfect_Launcher
             
             // Argumentos que serão usados
             //@ToDo: Adicionar novo parametro de entrada para o nick do personagem
-            string args = " startbypatcher" + " user:" + user + " pwd:" + passwd + " role:" + nick;
+            string args = " nocheck rendernofocus startbypatcher" + " user:" + user + " pwd:" + passwd + " role:" + nick;
 
             // Cria uma classe temporária para ser armazenada na lista
             RunningGames rg = new RunningGames();
@@ -422,58 +431,6 @@ namespace Perfect_Launcher
             usar64BitsToolStripMenuItem.Checked = Settings.Default.bUse64;
         }
 
-        private async Task<bool> HasUpdate()
-        {
-            try
-            {
-                string SVersion = "xxx";
-                string CVersion = "xxx";
-
-                // Verifica a versão do server
-                // Perfect World\patcher\server\updateserver.txt
-                // Contém "patch"  "http://fpatch3.perfectworld.com.br/CPW/"
-                // Ao adicionar version na url, retorna um file com a versão do servidor
-                string TextoComUrl = File.ReadAllText(Application.StartupPath.Replace("\\element", "\\patcher\\server\\updateserver.txt"));
-                var start = TextoComUrl.IndexOf("\"");
-                var Remover = TextoComUrl.Substring(start, TextoComUrl.IndexOf("\"h") - start); // Pega todo text até o "h(...ttp://)
-                TextoComUrl = TextoComUrl.Replace(Remover, ""); // Depois remove
-                TextoComUrl = TextoComUrl.Replace("\"", ""); // Remove as "" que sobraram
-                TextoComUrl = TextoComUrl.Replace("\r", ""); // Remove os \r (se tiver algum)
-                TextoComUrl = TextoComUrl.Replace("\n", ""); // Remove os \n (se tiver algum)
-
-                TextoComUrl += "element/version"; // Adiciona o resto da url necessária para pegar a versão
-
-                // Usa um webclient pra ver o arquivo
-                var wc = new WebClient();
-                SVersion = await wc.DownloadStringTaskAsync(TextoComUrl);
-                SVersion = SVersion.Replace("\n", ""); // Pega a versão já removendo os \n
-                SVersion = SVersion.Replace("\r", ""); // Remove os \r caso haja algum
-
-                // Verifica a versão do client
-                // Perfect World\config\element\version.sw
-                // Contém VERSÃOXX 0
-
-                // Substitui o diretório atual pelo diretório do arquivo na hora de ler o texto
-                CVersion = File.ReadAllText(Application.StartupPath.Replace("\\element", "\\config\\element\\version.sw"));
-                CVersion = CVersion.Replace(" 0", ""); // Remove o 0 da versão
-                CVersion = CVersion.Replace("\r", ""); // Remove os \r caso haja algum
-                CVersion = CVersion.Replace("\n", "");// Remove os \n caso haja algum
-
-                if (SVersion == "xxx" || CVersion == "xxx")
-                {
-                    WM.ShowMessage("Ocorreu um erro ao verificar a versão do server/client.\nPor favor, tente mais tarde.", 3);
-                    return false;
-                }
-
-                return (SVersion != CVersion);
-            }
-            catch (Exception x)
-            {
-                WM.ShowMessage(x.ToString());
-                return false;
-            }
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // Cria a pasta em que os arquivos do programa serão armazenados
@@ -489,8 +446,6 @@ namespace Perfect_Launcher
                 Directory.CreateDirectory(Application.StartupPath + "\\Perfect Launcher\\Erros");
 
             RefreshUsernamesOnComboBox();
-
-            //CheckForClientUpdates();
 
             // Reseta a checkbox da torre do martírio caso seja quarta-feira
             if (DateTime.Today.ToString("D").Contains("quarta-feira"))
@@ -544,27 +499,6 @@ namespace Perfect_Launcher
                 // Caso dê algo errado...
                 WM.ShowMessage(x.ToString(), 3);
             }
-        }
-
-        private void UpdateOpenRecentlyMenu()
-        {
-            // Exibe os menus de acordo com a quantidade de contas recentes
-            cONTA1ToolStripMenuItem.Visible = (OpenRecently.Count > 4);
-            cONTA2ToolStripMenuItem.Visible = (OpenRecently.Count > 3);
-            cONTA3ToolStripMenuItem.Visible = (OpenRecently.Count > 2);
-            cONTA4ToolStripMenuItem.Visible = (OpenRecently.Count > 1);
-            cONTA5ToolStripMenuItem.Visible = (OpenRecently.Count > 0);
-
-            if (OpenRecently.Count > 0)
-                cONTA5ToolStripMenuItem.Text = OpenRecently[0];
-            if (OpenRecently.Count > 1)
-                cONTA4ToolStripMenuItem.Text = OpenRecently[1];
-            if (OpenRecently.Count > 2)
-                cONTA3ToolStripMenuItem.Text = OpenRecently[2];
-            if (OpenRecently.Count > 3)
-                cONTA2ToolStripMenuItem.Text = OpenRecently[3];
-            if (OpenRecently.Count > 4)
-                cONTA1ToolStripMenuItem.Text = OpenRecently[4];
         }
 
         private void CrashWatcherTimer_Tick(object sender, EventArgs e)

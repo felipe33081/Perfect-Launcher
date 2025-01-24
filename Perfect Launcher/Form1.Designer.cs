@@ -579,9 +579,12 @@ namespace Perfect_Launcher
             this.toolStripComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.toolStripComboBox1.Items.AddRange(new object[] {
             "NENHUM",
-            "The Classic PW / Server 1",
-            "The Classic PW / Server 2",
-            "The Classic PW / Server 3"});
+            "History 1(PVP)",
+            "History 2(PVP)",
+            "History 3(PVP)",
+            "History 4(PVP)",
+            "History 5(PVP)",
+            "History 6(PVP)"});
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_SelectedIndexChanged);
