@@ -1005,11 +1005,32 @@ namespace Perfect_Launcher
 
         private void button12_Click(object sender, EventArgs e)
         {
-            // Tamanho do form full 535; 465
-            // Tamanho do form encolhido 190; 310
-            Size Pequeno = new Size(190, 360);
-            Size = Pequeno;
-            tabControl1.SelectedIndex = 1;
+            Size Pequeno = new Size(190, 200);
+            Size Grande = new Size(535, 465);
+
+            // Alterna entre os tamanhos
+            if (this.Size == Grande)
+            {
+                this.Size = Pequeno;
+                tabControl1.SelectedIndex = 1; // Garante que o tabControl mude ao reduzir
+
+                // Ajustando os botões na parte inferior quando a janela está menor
+                button14.Location = new Point(6, 80);
+                button13.Location = new Point(146, 80);
+                button15.Location = new Point(116, 80);
+                button17.Location = new Point(6, 125);
+                checkBox5.Location = new Point(6, 105);
+            }
+            else
+            {
+                this.Size = Grande;
+                tabControl1.SelectedIndex = 0; // Opcional: mudar o tabControl ao expandir
+
+                // Restaurando a posição original dos botões
+                button14.Location = new Point(6, 240);
+                button15.Location = new Point(115, 240);
+                button17.Location = new Point(6, 285);
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -1056,6 +1077,27 @@ namespace Perfect_Launcher
             catch
             {
                 System.Media.SystemSounds.Beep.Play();
+            }
+        }
+
+        private void button_ToggleSize_Click(object sender, EventArgs e)
+        {
+            ToggleSize();
+        }
+
+        private void ToggleSize()
+        {
+            if (this.Size.Width > 300) // Verifica se está na versão grande
+            {
+                this.Size = new Size(220, 300); // Define o novo tamanho reduzido
+                tabPage2.Size = new Size(200, 280); // Ajusta a aba
+                listBox3.Size = new Size(165, 50); // Garante que a listBox3 permaneça pequena
+            }
+            else
+            {
+                this.Size = new Size(500, 400); // Retorna ao tamanho original
+                tabPage2.Size = new Size(480, 380);
+                listBox3.Size = new Size(165, 200); // Aumenta novamente
             }
         }
 

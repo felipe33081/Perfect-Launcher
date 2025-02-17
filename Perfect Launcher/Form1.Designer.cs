@@ -271,21 +271,21 @@ namespace Perfect_Launcher
             // checkinDiárioToolStripMenuItem1
             // 
             this.checkinDiárioToolStripMenuItem1.Name = "checkinDiárioToolStripMenuItem1";
-            this.checkinDiárioToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.checkinDiárioToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
             this.checkinDiárioToolStripMenuItem1.Text = "Check-In diário";
             this.checkinDiárioToolStripMenuItem1.Click += new System.EventHandler(this.checkinDiárioToolStripMenuItem1_Click);
             // 
             // combarComAPTToolStripMenuItem1
             // 
             this.combarComAPTToolStripMenuItem1.Name = "combarComAPTToolStripMenuItem1";
-            this.combarComAPTToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.combarComAPTToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
             this.combarComAPTToolStripMenuItem1.Text = "Combar com a PT";
             this.combarComAPTToolStripMenuItem1.Click += new System.EventHandler(this.combarComAPTToolStripMenuItem1_Click);
             // 
             // fecharContasEXCETOToolStripMenuItem1
             // 
             this.fecharContasEXCETOToolStripMenuItem1.Name = "fecharContasEXCETOToolStripMenuItem1";
-            this.fecharContasEXCETOToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.fecharContasEXCETOToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
             this.fecharContasEXCETOToolStripMenuItem1.Text = "Fechar contas, EXCETO...";
             this.fecharContasEXCETOToolStripMenuItem1.Click += new System.EventHandler(this.fecharContasEXCETOToolStripMenuItem1_Click);
             // 
