@@ -37,30 +37,6 @@ namespace Perfect_Launcher.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("900")]
-        public int Interval1 {
-            get {
-                return ((int)(this["Interval1"]));
-            }
-            set {
-                this["Interval1"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1300")]
-        public int Interval2 {
-            get {
-                return ((int)(this["Interval2"]));
-            }
-            set {
-                this["Interval2"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int LastIndexUsed {
             get {
@@ -344,6 +320,30 @@ namespace Perfect_Launcher.Properties {
             }
             set {
                 this["UsersBeforeClosing"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public int Interval1 {
+            get {
+                return ((int)(this["Interval1"]));
+            }
+            set {
+                this["Interval1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1500")]
+        public int Interval2 {
+            get {
+                return ((int)(this["Interval2"]));
+            }
+            set {
+                this["Interval2"] = value;
             }
         }
     }

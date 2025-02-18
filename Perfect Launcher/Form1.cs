@@ -1034,7 +1034,7 @@ namespace Perfect_Launcher
                     var Passwd = s.Substring(start2, s.IndexOf("£") - start2);
 
                     var start3 = s.IndexOf("¢") + 1;
-                    var Classe = s.Substring(start3, s.IndexOf("¬") - start3);
+                    var Classe = s.Substring(start3, s.IndexOf("┼") - start3);
 
                     // Corrigido: Usar LastIndexOf para garantir o último "5"
                     var start4 = s.IndexOf("┼") + 1;

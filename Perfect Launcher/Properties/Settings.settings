@@ -5,12 +5,6 @@
     <Setting Name="bFirstRun" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="Interval1" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">900</Value>
-    </Setting>
-    <Setting Name="Interval2" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1300</Value>
-    </Setting>
     <Setting Name="LastIndexUsed" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
@@ -105,6 +99,12 @@
     <Setting Name="UsersBeforeClosing" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" /&gt;</Value>
+    </Setting>
+    <Setting Name="Interval1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="Interval2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1500</Value>
     </Setting>
   </Settings>
 </SettingsFile>
