@@ -502,7 +502,7 @@ namespace Perfect_Launcher
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(521, 430);
+            this.tabPage2.Size = new System.Drawing.Size(519, 430);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -514,7 +514,7 @@ namespace Perfect_Launcher
             this.listBox3.Location = new System.Drawing.Point(6, 6);
             this.listBox3.Name = "listBox3";
             this.listBox3.ScrollAlwaysVisible = true;
-            this.listBox3.Size = new System.Drawing.Size(165, 68);
+            this.listBox3.Size = new System.Drawing.Size(165, 228);
             this.listBox3.TabIndex = 28;
             this.listBox3.TabStop = false;
             this.listBox3.Click += new System.EventHandler(this.listBox3_Click);

@@ -114,16 +114,23 @@ namespace Perfect_Launcher
             this.comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "GUERREIRO(A)",
-            "MAGO(A)",
-            "ARQUEIRO(A)",
-            "SACERDOTE",
-            "BÁRBARO",
-            "FEITICEIRA",
-            "MERCENÁRIO(A)",
-            "ESPIRITUALISTA",
-            "ARCANO",
-            "MÍSTICO"});
+                "GUERREIRO(A)",
+                "MAGO(A)",
+                "ARQUEIRO(A)",
+                "SACERDOTE",
+                "BÁRBARO",
+                "FEITICEIRA",
+                "MERCENÁRIO(A)",
+                "ESPIRITUALISTA",
+                "ARCANO",
+                "MÍSTICO",
+                "RETALHADOR",
+                "TORMENTADOR",
+                "ATIRADORA",
+                "PALADINO",
+                "ANDARILHO",
+                "BARDO"
+            });
             this.comboBox1.Location = new System.Drawing.Point(23, 195);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(210, 24);

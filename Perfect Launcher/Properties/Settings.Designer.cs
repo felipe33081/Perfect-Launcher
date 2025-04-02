@@ -346,5 +346,17 @@ namespace Perfect_Launcher.Properties {
                 this["UsersBeforeClosing"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ExecutavelCustom {
+            get {
+                return ((string)(this["ExecutavelCustom"]));
+            }
+            set {
+                this["ExecutavelCustom"] = value;
+            }
+        }
     }
 }

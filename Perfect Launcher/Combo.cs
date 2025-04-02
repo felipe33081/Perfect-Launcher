@@ -1005,32 +1005,37 @@ namespace Perfect_Launcher
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Size Pequeno = new Size(190, 200);
-            Size Grande = new Size(535, 465);
+            // Tamanho do form full 535; 465
+            // Tamanho do form encolhido 190; 310
+            Size Pequeno = new Size(190, 360);
+            Size = Pequeno;
+            tabControl1.SelectedIndex = 1;
+            //Size Pequeno = new Size(190, 200);
+            //Size Grande = new Size(535, 465);
 
-            // Alterna entre os tamanhos
-            if (this.Size == Grande)
-            {
-                this.Size = Pequeno;
-                tabControl1.SelectedIndex = 1; // Garante que o tabControl mude ao reduzir
+            //// Alterna entre os tamanhos
+            //if (this.Size == Grande)
+            //{
+            //    this.Size = Pequeno;
+            //    tabControl1.SelectedIndex = 1; // Garante que o tabControl mude ao reduzir
 
-                // Ajustando os botões na parte inferior quando a janela está menor
-                button14.Location = new Point(6, 80);
-                button13.Location = new Point(146, 80);
-                button15.Location = new Point(116, 80);
-                button17.Location = new Point(6, 125);
-                checkBox5.Location = new Point(6, 105);
-            }
-            else
-            {
-                this.Size = Grande;
-                tabControl1.SelectedIndex = 0; // Opcional: mudar o tabControl ao expandir
+            //    // Ajustando os botões na parte inferior quando a janela está menor
+            //    button14.Location = new Point(6, 80);
+            //    button13.Location = new Point(146, 80);
+            //    button15.Location = new Point(116, 80);
+            //    button17.Location = new Point(6, 125);
+            //    checkBox5.Location = new Point(6, 105);
+            //}
+            //else
+            //{
+            //    this.Size = Grande;
+            //    tabControl1.SelectedIndex = 0; // Opcional: mudar o tabControl ao expandir
 
-                // Restaurando a posição original dos botões
-                button14.Location = new Point(6, 240);
-                button15.Location = new Point(115, 240);
-                button17.Location = new Point(6, 285);
-            }
+            //    // Restaurando a posição original dos botões
+            //    button14.Location = new Point(6, 240);
+            //    button15.Location = new Point(115, 240);
+            //    button17.Location = new Point(6, 285);
+            //}
         }
 
         private void button13_Click(object sender, EventArgs e)
